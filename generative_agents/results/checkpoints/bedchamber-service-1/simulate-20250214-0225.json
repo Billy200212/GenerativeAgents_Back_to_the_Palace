@@ -1,0 +1,7049 @@
+{
+  "stride": 5,
+  "time": "20250214-02:25",
+  "maze": {
+    "path": "assets\\village\\maze.json"
+  },
+  "agent_base": {
+    "percept": {
+      "mode": "box",
+      "vision_r": 8,
+      "att_bandwidth": 8
+    },
+    "schedule": {
+      "max_try": 5,
+      "diversity": 5
+    },
+    "think": {
+      "llm": {
+        "provider": "openai",
+        "model": "gemini-3-flash-preview",
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+        "api_key": "enter your API here"
+      },
+      "interval": 1000,
+      "poignancy_max": 150
+    },
+    "chat_iter": 4,
+    "associate": {
+      "embedding": {
+        "provider": "openai",
+        "model": "gemini-embedding-001",
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+        "api_key": "enter your API here"
+      },
+      "retention": 8
+    }
+  },
+  "agents": {
+    "春桃": {
+      "config_path": "assets\\village\\agents\\春桃\\agent.json",
+      "status": {
+        "poignancy": 61
+      },
+      "schedule": {
+        "create": "20250214-00:00:00",
+        "daily_schedule": [
+          {
+            "idx": 0,
+            "describe": "守夜",
+            "start": 0,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "检查室内炭火并轻声添炭，确保主子安睡环境温暖",
+                "start": 0,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "细心查看主子红肿的膝盖，确认药膏吸收情况并掖好被角",
+                "start": 10,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "忍痛为自己红肿的脸颊进行简单冷敷，以保持头脑绝对清醒",
+                "start": 20,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "坐在榻旁脚踏上警惕四周动静，脑中复盘日间在【凤仪宫】的受辱细节",
+                "start": 25,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "梳理各宫眼线分布，缜密推演明日反击公关的言辞逻辑",
+                "start": 40,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "起身巡视门窗插销，确保安全后回到主子身边继续守候",
+                "start": 55,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 1,
+            "describe": "守夜",
+            "start": 60,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "检查炭火并为主子掖好被角",
+                "start": 60,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "轻轻揉按自己红肿的脸颊以保持清醒",
+                "start": 65,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "在脑中仔细复盘白天在凤仪宫受审的每一个细节",
+                "start": 70,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "分析各方势力的态度并寻找反击的突破口",
+                "start": 80,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "结合宫廷规矩构思如何为林晚星洗清冤屈",
+                "start": 90,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "预演次日可能面临的盘问并推敲应对的话术",
+                "start": 100,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "警惕地倾听窗外动静并确认门户紧闭",
+                "start": 110,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "整理思绪并维持跪坐姿势继续守护主子",
+                "start": 115,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 2,
+            "describe": "守夜",
+            "start": 120,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "检查林晚星的睡颜并为其轻声掖好被角",
+                "start": 120,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "用冷毛巾敷自己红肿的脸颊并保持警觉",
+                "start": 130,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "在脑中反复推演凤仪宫受审时的对话细节",
+                "start": 140,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "结合后宫规矩构思反击对方的逻辑漏洞",
+                "start": 150,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "检查并整理明日清晨主子请安需用的衣物",
+                "start": 160,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "巡视寝殿门窗确保安全并确认炭火情况",
+                "start": 170,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "为灯盏添油并回到床榻边继续静坐守夜",
+                "start": 175,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 3,
+            "describe": "守夜",
+            "start": 180,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 4,
+            "describe": "守夜",
+            "start": 240,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 5,
+            "describe": "起床並洗漱，準備伺候主子",
+            "start": 300,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 6,
+            "describe": "陪同主子前往【鳳儀宮】請安，隨後一同被扣留在正廳",
+            "start": 360,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 7,
+            "describe": "在【鳳儀宮】正廳陪同主子，時刻保持警惕",
+            "start": 420,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 8,
+            "describe": "在【鳳儀宮】正廳陪同主子，忍受緊張氣氛",
+            "start": 480,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 9,
+            "describe": "在【鳳儀宮】正廳忍受掌嘴之痛，緊緊抓著主子衣角給予支持",
+            "start": 540,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 10,
+            "describe": "忍受臉頰疼痛，在【鳳儀宮】正廳繼續守護主子",
+            "start": 600,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 11,
+            "describe": "在【鳳儀宮】正廳陪同主子，應對皇后的威壓",
+            "start": 660,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 12,
+            "describe": "在【鳳儀宮】陪同主子罰跪，時刻關注主子的身體狀況",
+            "start": 720,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "觀察主子面色與呼吸，確認其在受罰與籌劃反擊的高壓下身體是否支撐得住",
+                "start": 726,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "警惕地環視鳳儀宮宮人，防範有人因端妃的陷害而暗中刁難或偷聽反擊計畫",
+                "start": 731,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "輕聲耳語安撫主子，再次確認「公關反殺」的關鍵細節，給予彼此心理支持",
+                "start": 741,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "忍受臉頰紅腫的劇痛，並悄悄為主子擋住地磚的寒氣，將對端妃的憤恨化為堅持的動力",
+                "start": 746,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "檢查主子膝蓋的顫抖情況，試圖用自己的腿墊在後方，為即將到來的御前對質保存體力",
+                "start": 756,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "在心中反覆練習關於端妃派人栽贓的證詞，努力克服對皇后威嚴的恐懼",
+                "start": 766,
+                "duration": 7
+              },
+              {
+                "idx": 6,
+                "describe": "緊緊抓牢主子衣角，眼神交會達成最後默契，做好迎接審判並實施反擊的心理準備",
+                "start": 773,
+                "duration": 7
+              }
+            ]
+          },
+          {
+            "idx": 13,
+            "describe": "在審判中強忍對皇權的恐懼，哭訴為主子作證",
+            "start": 780,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "挺直脊背呈上关键证据，在林晚星的逻辑引导下，当众指认端妃派系的栽赃行径，亲眼见证局势反转，最终在洗清冤屈的如释重负中随主子叩头谢恩。",
+                "start": 836,
+                "duration": 4
+              }
+            ]
+          },
+          {
+            "idx": 14,
+            "describe": "審判結束，在【鳳儀宮】等待主子被獲准離開",
+            "start": 840,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在皇帝多疑且威嚴的目光注視下，強忍雙膝劇痛與內心惶恐，繼續吃力地將跪至脫力的主子扶起",
+                "start": 891,
+                "duration": 6
+              },
+              {
+                "idx": 1,
+                "describe": "屏息斂聲地整理主子凌亂的衣角與髮髻，低頭垂目，小心翼翼地攙扶主子步出正廳",
+                "start": 897,
+                "duration": 3
+              }
+            ]
+          },
+          {
+            "idx": 15,
+            "describe": "攙扶主子回到【靜安苑】，尋找冰塊幫忙冰敷主子紅腫的膝蓋",
+            "start": 900,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "攙扶膝蓋受傷的主子緩慢起身並走出【鳳儀宮】",
+                "start": 900,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "忍著臉頰掌摑的疼痛，小心翼翼攙扶主子走回【靜安苑】",
+                "start": 910,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "伺候主子在榻上坐穩，輕輕捲起主子褲腿查看膝蓋傷勢",
+                "start": 925,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "趕往小廚房或儲藏室，向管事太監討要冰塊",
+                "start": 930,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "將討來的冰塊用乾淨的布巾包裹嚴實",
+                "start": 945,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "跪在榻邊為主子紅腫的膝蓋進行冰敷並輕聲寬慰",
+                "start": 950,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 16,
+            "describe": "在【靜安苑】繼續照顧主子，整理儀容",
+            "start": 960,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "檢查主子膝蓋消腫情況並更換新的冷敷帕子",
+                "start": 960,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "伺候主子更換一套前往晚間請安的整潔衣裳",
+                "start": 970,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "重新為主子梳理在罰跪時散亂的髮髻並佩戴頭飾",
+                "start": 980,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "仔細為主子施薄粉以遮蓋臉上的憔悴與淚痕",
+                "start": 990,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "匆忙用冷水敷一下自己紅腫的臉頰以免失儀",
+                "start": 1000,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "倒一杯熱茶伺候主子飲下，緩解主子的緊張情緒",
+                "start": 1005,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "整理主子出門需用的披風與隨身物件",
+                "start": 1010,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "攙扶主子在屋內試著走動，確認膝蓋能否支撐",
+                "start": 1015,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 17,
+            "describe": "再次攙扶主子前往【鳳儀宮】進行晚間請安，眼神警惕地盯著四周",
+            "start": 1020,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "為主子進行最後的衣冠整理，確保儀容端正",
+                "start": 1020,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "小心地攙扶主子起身，避開受傷的膝蓋",
+                "start": 1030,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "攙扶主子走出【靜安苑】，緩步前往【鳳儀宮】",
+                "start": 1035,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "在宮道上警惕環視四周，防範其他宮人刁難",
+                "start": 1045,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "抵達【鳳儀宮】外，在廊下低頭等候傳喚",
+                "start": 1055,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "進入正廳，時刻關注皇后與宮人的神情變化",
+                "start": 1060,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "陪同主子行禮，跪在主子身側保持戒備",
+                "start": 1070,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 18,
+            "describe": "在【鳳儀宮】完成晚間請安，陪同主子返回",
+            "start": 1080,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "眼神警惕地掃視四周宮人，護送主子退出鳳儀宮正廳",
+                "start": 1097,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "在宮道上緩步攙扶主子，時刻注意其膝蓋支撐力，並低聲勸導主子保重身體",
+                "start": 1107,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "抵達靜安苑並攙扶主子進入內室，安置在軟榻上",
+                "start": 1122,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "輕聲安撫主子情緒，查看其膝蓋紅腫是否有惡化，並趕緊準備冰敷用品為其緩解傷痛",
+                "start": 1132,
+                "duration": 8
+              }
+            ]
+          },
+          {
+            "idx": 19,
+            "describe": "回到【靜安苑】，為主子準備簡單的膳食並整理內室",
+            "start": 1140,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "伺候主子進膳，並在一旁聽候主子關於應對端妃的吩咐，輕聲寬慰主子",
+                "start": 1171,
+                "duration": 14
+              },
+              {
+                "idx": 1,
+                "describe": "收拾餐具並簡單擦拭內室桌案，確保內室整潔有序",
+                "start": 1185,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "整理內室床鋪，並點燃安神香以平復主子情緒，伺候受傷的主子歇下",
+                "start": 1190,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 20,
+            "describe": "準備熱水伺候主子洗漱，應用簡易醫理檢查主子傷情",
+            "start": 1200,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "前往小廚房提領熱水並準備洗漱用具",
+                "start": 1200,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "仔細調試水溫，伺候主子擦拭臉部與雙手",
+                "start": 1210,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "輕柔地捲起主子褲腿，檢查膝蓋跪傷情況",
+                "start": 1220,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "應用簡易醫理觀察主子臉部紅腫與膝蓋瘀青",
+                "start": 1225,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "取出藥膏，一邊吹氣一邊為主子塗抹傷處",
+                "start": 1235,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "輕聲安慰主子，同時按摩腿部穴位緩解痠痛",
+                "start": 1245,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "收拾洗漱水盆與藥膏，確保內室整潔",
+                "start": 1255,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 21,
+            "describe": "伺候主子寬衣，整理床鋪",
+            "start": 1260,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "輕手輕腳地服侍主子脫去繁瑣的外袍與中衣",
+                "start": 1260,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "將換下的宮服與首飾仔細收納整理",
+                "start": 1270,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "再次應用簡易醫理為主子膝蓋傷處換藥",
+                "start": 1275,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "仔細鋪陳床褥並確保被褥溫暖平整",
+                "start": 1285,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "攙扶主子移步至床榻並安置妥當",
+                "start": 1295,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "在香爐中點燃安神香以助主子入眠",
+                "start": 1300,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "調暗室內燈火並檢查門窗是否關嚴",
+                "start": 1305,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "為主子掖好被角並低聲寬慰",
+                "start": 1310,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 22,
+            "describe": "開始守夜，全天候守護在主子身邊，確保主子安穩入睡",
+            "start": 1320,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "检查寝殿门窗是否关严并熄灭多余烛火",
+                "start": 1320,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "拨弄炭盆确保室内温暖且无烟气冒出",
+                "start": 1330,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "轻声安抚受惊的主子并为其掖好被角",
+                "start": 1335,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "取冷毛巾简单敷一下自己红肿的脸颊",
+                "start": 1345,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "在主子床榻边的脚踏上坐定准备守夜",
+                "start": 1350,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "屏息凝神观察主子睡颜确保其安稳入睡",
+                "start": 1355,
+                "duration": 15
+              },
+              {
+                "idx": 6,
+                "describe": "保持高度警惕留意窗外动静以防意外",
+                "start": 1370,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 23,
+            "describe": "守夜，時刻關注主子動靜，確保主子安穩入睡",
+            "start": 1380,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "檢查寢殿內的炭火與燭台，確保室內溫暖且光線昏暗適宜主子入睡",
+                "start": 1380,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "輕手輕腳地為主子掖好被角，觀察主子睡夢中的神情是否安穩",
+                "start": 1390,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "檢查主子膝蓋處的傷勢，確認冰敷後的紅腫是否有消退跡象",
+                "start": 1395,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "準備一盞溫熱的白開水放在床頭几案，以備主子夜間驚醒時飲用",
+                "start": 1405,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "巡視寢殿的門窗閂鎖，確保關閉嚴實以防夜風侵襲或外人驚擾",
+                "start": 1410,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "坐在床邊的小杌子上，屏息凝神地守候，時刻留意主子的呼吸聲",
+                "start": 1415,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "輕輕揉搓自己紅腫發燙的臉頰，強忍疼痛並努力克服湧上的睏意",
+                "start": 1425,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "整理明日清晨主子需更換的乾淨衣物，並整齊疊放在床尾",
+                "start": 1430,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "保持警惕的坐姿守在踏板旁，進入深夜高度戒備的守護狀態",
+                "start": 1435,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 24,
+            "describe": "守夜，在主子榻前守護",
+            "start": 1440,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 25,
+            "describe": "守夜，在主子榻前守護",
+            "start": 1500,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 26,
+            "describe": "守夜，在主子榻前守護",
+            "start": 1560,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 27,
+            "describe": "守夜，在主子榻前守護",
+            "start": 1620,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 28,
+            "describe": "守夜，在主子榻前守護",
+            "start": 1680,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 29,
+            "describe": "起床，整理儀容並檢查主子靜常在的起居用品",
+            "start": 1740,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 30,
+            "describe": "陪同主子前往【鳳儀宮】請安並一同被扣留在宮內",
+            "start": 1800,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 31,
+            "describe": "在【鳳儀宮】被扣留，寸步不離守護主子，忍受宮人冷眼",
+            "start": 1860,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 32,
+            "describe": "在【鳳儀宮】被扣留，強壓恐懼，隨時應對突發狀況",
+            "start": 1920,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 33,
+            "describe": "在【鳳儀宮】焦灼等待，暗中觀察各方動向",
+            "start": 1980,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 34,
+            "describe": "在【鳳儀宮】焦灼等待，低頭斂目以規矩禮儀自持",
+            "start": 2040,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 35,
+            "describe": "在【鳳儀宮】焦灼等待，輕聲安撫主子不安的情緒",
+            "start": 2100,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 36,
+            "describe": "在【鳳儀宮】陪同主子罰跪，忍受膝蓋劇痛與羞辱",
+            "start": 2160,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 37,
+            "describe": "在審判中悲憤哭訴，為主子作證以博取同情",
+            "start": 2220,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 38,
+            "describe": "審判結束，忍著渾身疼痛攙扶主子準備離開",
+            "start": 2280,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 39,
+            "describe": "攙扶主子回到【靜安苑】，細心地為主子冰敷紅腫的膝蓋",
+            "start": 2340,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 40,
+            "describe": "強忍臉頰腫痛，冷靜復盤局勢並籌謀反殺之策",
+            "start": 2400,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 41,
+            "describe": "攙扶林晚星前往【鳳儀宮】晚間請安，眼神警惕地環視四周",
+            "start": 2460,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 42,
+            "describe": "陪同主子回到【靜安苑】，準備簡單的晚膳",
+            "start": 2520,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 43,
+            "describe": "陪伴在主子身邊，寸步不離地守護並繼續完善計劃",
+            "start": 2580,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 44,
+            "describe": "準備熱水伺候主子洗漱，緩解其一身疲憊",
+            "start": 2640,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 45,
+            "describe": "為主子塗抹傷藥，隨後簡單處理自己臉上的傷痕",
+            "start": 2700,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 46,
+            "describe": "開始守夜，在主子榻前徹夜守護，隨時待命",
+            "start": 2760,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 47,
+            "describe": "守夜，保持高度警惕，在腦中反覆推演反殺計劃細節",
+            "start": 2820,
+            "duration": 60,
+            "decompose": {}
+          }
+        ]
+      },
+      "associate": {
+        "memory": {
+          "event": [
+            "node_313",
+            "node_312",
+            "node_311",
+            "node_310",
+            "node_309",
+            "node_308",
+            "node_307",
+            "node_306",
+            "node_305",
+            "node_304",
+            "node_303",
+            "node_302",
+            "node_301",
+            "node_300",
+            "node_299",
+            "node_298",
+            "node_297",
+            "node_296",
+            "node_278",
+            "node_277",
+            "node_276",
+            "node_275",
+            "node_274",
+            "node_273",
+            "node_272",
+            "node_271",
+            "node_270",
+            "node_268",
+            "node_267",
+            "node_266",
+            "node_265",
+            "node_264",
+            "node_263",
+            "node_262",
+            "node_261",
+            "node_260",
+            "node_259",
+            "node_258",
+            "node_257",
+            "node_256",
+            "node_255",
+            "node_254",
+            "node_253",
+            "node_252",
+            "node_251",
+            "node_250",
+            "node_249",
+            "node_248",
+            "node_247",
+            "node_246",
+            "node_245",
+            "node_243",
+            "node_242",
+            "node_241",
+            "node_240",
+            "node_239",
+            "node_238",
+            "node_237",
+            "node_236",
+            "node_234",
+            "node_233",
+            "node_232",
+            "node_231",
+            "node_213",
+            "node_212",
+            "node_211",
+            "node_210",
+            "node_209",
+            "node_208",
+            "node_207",
+            "node_206",
+            "node_205",
+            "node_204",
+            "node_203",
+            "node_202",
+            "node_201",
+            "node_200",
+            "node_199",
+            "node_198",
+            "node_197",
+            "node_196",
+            "node_195",
+            "node_194",
+            "node_193",
+            "node_191",
+            "node_190",
+            "node_174",
+            "node_173",
+            "node_172",
+            "node_171",
+            "node_170",
+            "node_169",
+            "node_168",
+            "node_167",
+            "node_166",
+            "node_165",
+            "node_164",
+            "node_163",
+            "node_162",
+            "node_161",
+            "node_160",
+            "node_159",
+            "node_158",
+            "node_157",
+            "node_156",
+            "node_154",
+            "node_136",
+            "node_135",
+            "node_134",
+            "node_133",
+            "node_132",
+            "node_131",
+            "node_130",
+            "node_129",
+            "node_128",
+            "node_127",
+            "node_126",
+            "node_125",
+            "node_124",
+            "node_123",
+            "node_122",
+            "node_121",
+            "node_120",
+            "node_119",
+            "node_117",
+            "node_99",
+            "node_98",
+            "node_97",
+            "node_96",
+            "node_95",
+            "node_94",
+            "node_93",
+            "node_92",
+            "node_91",
+            "node_90",
+            "node_89",
+            "node_88",
+            "node_87",
+            "node_86",
+            "node_85",
+            "node_84",
+            "node_83",
+            "node_81",
+            "node_80",
+            "node_61",
+            "node_60",
+            "node_59",
+            "node_58",
+            "node_57",
+            "node_56",
+            "node_54",
+            "node_53",
+            "node_52",
+            "node_51",
+            "node_50",
+            "node_49",
+            "node_47",
+            "node_46",
+            "node_45",
+            "node_44",
+            "node_43",
+            "node_42",
+            "node_41",
+            "node_40",
+            "node_39",
+            "node_21",
+            "node_20",
+            "node_19",
+            "node_18",
+            "node_17",
+            "node_16",
+            "node_15",
+            "node_14",
+            "node_13",
+            "node_12",
+            "node_11",
+            "node_10",
+            "node_9",
+            "node_8",
+            "node_7",
+            "node_6",
+            "node_5",
+            "node_4",
+            "node_3",
+            "node_2"
+          ],
+          "thought": [
+            "node_295",
+            "node_294",
+            "node_293",
+            "node_292",
+            "node_291",
+            "node_290",
+            "node_289",
+            "node_288",
+            "node_287",
+            "node_286",
+            "node_285",
+            "node_284",
+            "node_283",
+            "node_282",
+            "node_281",
+            "node_280",
+            "node_279",
+            "node_269",
+            "node_230",
+            "node_229",
+            "node_228",
+            "node_227",
+            "node_226",
+            "node_225",
+            "node_224",
+            "node_223",
+            "node_222",
+            "node_221",
+            "node_220",
+            "node_219",
+            "node_218",
+            "node_217",
+            "node_216",
+            "node_215",
+            "node_214",
+            "node_189",
+            "node_188",
+            "node_187",
+            "node_186",
+            "node_185",
+            "node_184",
+            "node_183",
+            "node_182",
+            "node_181",
+            "node_180",
+            "node_179",
+            "node_178",
+            "node_177",
+            "node_176",
+            "node_175",
+            "node_153",
+            "node_152",
+            "node_151",
+            "node_150",
+            "node_149",
+            "node_148",
+            "node_147",
+            "node_146",
+            "node_145",
+            "node_144",
+            "node_143",
+            "node_142",
+            "node_141",
+            "node_140",
+            "node_139",
+            "node_138",
+            "node_137",
+            "node_116",
+            "node_115",
+            "node_114",
+            "node_113",
+            "node_112",
+            "node_111",
+            "node_110",
+            "node_109",
+            "node_108",
+            "node_107",
+            "node_106",
+            "node_105",
+            "node_104",
+            "node_103",
+            "node_102",
+            "node_101",
+            "node_100",
+            "node_78",
+            "node_77",
+            "node_76",
+            "node_75",
+            "node_74",
+            "node_73",
+            "node_72",
+            "node_71",
+            "node_70",
+            "node_69",
+            "node_68",
+            "node_67",
+            "node_66",
+            "node_65",
+            "node_64",
+            "node_63",
+            "node_62",
+            "node_38",
+            "node_37",
+            "node_36",
+            "node_35",
+            "node_34",
+            "node_33",
+            "node_32",
+            "node_31",
+            "node_30",
+            "node_29",
+            "node_28",
+            "node_27",
+            "node_26",
+            "node_25",
+            "node_24",
+            "node_23",
+            "node_22",
+            "node_0"
+          ],
+          "chat": [
+            "node_244",
+            "node_235",
+            "node_192",
+            "node_155",
+            "node_118",
+            "node_82",
+            "node_79",
+            "node_55",
+            "node_48",
+            "node_1"
+          ]
+        }
+      },
+      "chats": [],
+      "currently": "春桃正強忍著臉頰的紅腫與身心的疲憊，如同一柄藏於暗處的理刃，在靜安苑中一邊細心照拂主子，一邊以極致的冷靜與縝密的邏輯復盤著局勢，隨時準備發起那場決定生死的公關反殺",
+      "action": {
+        "event": {
+          "subject": "春桃",
+          "predicate": "此时",
+          "object": "在脑中反复推演凤仪宫受审时的对话细节",
+          "describe": "在脑中反复推演凤仪宫受审时的对话细节",
+          "address": [
+            "the Ville",
+            "靜安苑",
+            "靜安苑休息區",
+            "床"
+          ],
+          "emoji": "在脑中反复推演凤仪宫受审时的对话细节"
+        },
+        "obj_event": {
+          "subject": "床",
+          "predicate": "此时",
+          "object": "正在被用来坐卧思索",
+          "describe": "正在被用来坐卧思索",
+          "address": [
+            "the Ville",
+            "靜安苑",
+            "靜安苑休息區",
+            "床"
+          ],
+          "emoji": ""
+        },
+        "start": "20250214-02:20:00",
+        "duration": 10
+      },
+      "coord": [
+        89,
+        14
+      ]
+    },
+    "林晚星": {
+      "config_path": "assets\\village\\agents\\林晚星\\agent.json",
+      "status": {
+        "poignancy": 132
+      },
+      "schedule": {
+        "create": "20250214-00:00:00",
+        "daily_schedule": [
+          {
+            "idx": 0,
+            "describe": "睡觉",
+            "start": 0,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "躺在龙榻上复盘“蔻丹案”的公关逻辑，确认反杀证据链闭环",
+                "start": 0,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "屏息观察宸暉殿内动静，评估皇帝对自己的信任红利空间",
+                "start": 10,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "脑内预演明日凤仪宫请安时的表情管理，确保神态“嚣张且无辜”",
+                "start": 15,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "运用现代冥想呼吸法，平复高压博弈后的神经亢奋",
+                "start": 25,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "调整睡姿并放松肢体，逐渐陷入浅层睡眠",
+                "start": 35,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "彻底进入深度睡眠，为明日的宫廷斗争储备体力",
+                "start": 45,
+                "duration": 15
+              }
+            ]
+          },
+          {
+            "idx": 1,
+            "describe": "睡觉",
+            "start": 60,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "调整呼吸进入深度睡眠以修复今日高强度公关的脑力损耗",
+                "start": 60,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "在潜意识中维持现代顶流女星的表情管理与优雅睡姿",
+                "start": 70,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "梦见回到现代红毯并下意识整理并不存在的晚礼服",
+                "start": 80,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "彻底放松紧绷的神经进入无梦的深层沉睡阶段",
+                "start": 95,
+                "duration": 20
+              },
+              {
+                "idx": 4,
+                "describe": "保持稳定的深度睡眠以应对清晨凤仪宫的明争暗斗",
+                "start": 115,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 2,
+            "describe": "睡觉",
+            "start": 120,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "调整姿势在龙床上寻找最舒适的睡点",
+                "start": 120,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "进入深度睡眠以恢复高强度脑力消耗",
+                "start": 125,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "在梦中复盘并重温刚才碾压端妃的爽感",
+                "start": 140,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "维持平稳呼吸并享受宸暉殿的安宁",
+                "start": 150,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "潜意识里保持对周遭环境的职业警觉",
+                "start": 165,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "彻底沉入黑甜乡为明日清晨蓄力",
+                "start": 175,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 3,
+            "describe": "睡觉",
+            "start": 180,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 4,
+            "describe": "睡觉",
+            "start": 240,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 5,
+            "describe": "睡觉",
+            "start": 300,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 6,
+            "describe": "起床簡單梳洗，前往【鳳儀宮】進行晨間請安，得知寢宮已被搜查並發現「物證」",
+            "start": 360,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 7,
+            "describe": "在【鳳儀宮】偏殿被看管，面對其他妃嬪的冷嘲熱諷，保持頂流女星的表情管理",
+            "start": 420,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 8,
+            "describe": "跪在【鳳儀宮】側廊，腦中快速復盤昨日行蹤，構思「玉璽案」的公關辯護稿",
+            "start": 480,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 9,
+            "describe": "被扣留在【鳳儀宮正廳】，跪在大殿中央等待皇上下朝，分析栽贓者的邏輯漏洞",
+            "start": 540,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 10,
+            "describe": "維持筆直跪姿，在腦中對比端妃與自己的時間線，尋找物理上不可能完成的證據",
+            "start": 600,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 11,
+            "describe": "繼續在【鳳儀宮正廳】待命，無視膝蓋疼痛，以極強抗壓能力應對皇后的威壓",
+            "start": 660,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 12,
+            "describe": "整理辯論邏輯，準備在皇上面前進行一場絕地反擊的「澄清發布會」",
+            "start": 720,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "結合剛才與華嵐交鋒的反應，進一步完善對「玉璽」物證的邏輯拆解，確保留下讓對手自亂陣腳的致命破綻",
+                "start": 731,
+                "duration": 11
+              },
+              {
+                "idx": 1,
+                "describe": "在腦中精煉「澄清發布會」的開場白，將囂張自信的姿態與受害者的委屈精準融合，準備奪取場域主導權",
+                "start": 742,
+                "duration": 13
+              },
+              {
+                "idx": 2,
+                "describe": "針對皇上可能提出的質疑，預演「邏輯跳躍」式辯論，並與春桃進行最後的眼神示意，確保證詞銜接無懈可擊",
+                "start": 755,
+                "duration": 13
+              },
+              {
+                "idx": 3,
+                "describe": "快速模擬皇后與端妃的後續反擊手段，制定三套應急方案，以高強抗壓狀態應對即將到來的多方博弈",
+                "start": 768,
+                "duration": 7
+              },
+              {
+                "idx": 4,
+                "describe": "進行深度呼吸調節，將眼神切換至「隱忍而堅毅」的受害者模式，屏息以待皇上駕臨，準備開啟絕地反擊",
+                "start": 775,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 13,
+            "describe": "在【鳳儀宮】正殿面見皇上與眾妃嬪，針對「玉璽案」進行自我辯護，拆解端妃陷阱",
+            "start": 780,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "正式开启现场逻辑复刻，步步紧逼指出端妃言辞中的物理漏洞，在众目睽睽之下引导侍卫搜出被剪秋藏匿的真正证物，令对方措手不及。",
+                "start": 836,
+                "duration": 3
+              },
+              {
+                "idx": 1,
+                "describe": "尘埃落定，皇上震怒并下令彻查端妃，林晚星在众人的惊叹声中彻底洗脱嫌疑，成功实现从“待罪之身”到“真相揭露者”的华丽转身。",
+                "start": 839,
+                "duration": 1
+              }
+            ]
+          },
+          {
+            "idx": 14,
+            "describe": "繼續在正殿與端妃對質，利用邏輯跳躍與輿論引導技巧，爭取皇上的信任",
+            "start": 840,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "被禁衛軍押解至大殿，面對「私藏玉璽」之重罪指控，在皇上震怒與眾妃嬪圍觀下保持冷靜，思索脫困之策",
+                "start": 840,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "聽取內務府呈報搜宮經過，觀察呈堂證物的包裝細節，敏銳捕捉到物證來源的邏輯漏洞",
+                "start": 855,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "頂住落井下石的輿論壓力，向皇上請求近距離勘驗證物，在眾人質疑聲中尋找翻盤的決定性證據",
+                "start": 870,
+                "duration": 12
+              },
+              {
+                "idx": 3,
+                "describe": "拋出關鍵疑點，指出包裹玉璽的絲綢材質並非靜安苑的配給，而是高位妃嬪所用",
+                "start": 882,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "頂住皇權壓力，請求皇上准許其回宮復查，完成本輪辯護的收尾",
+                "start": 892,
+                "duration": 3
+              },
+              {
+                "idx": 5,
+                "describe": "林晚星以裹玉玺的贡品云缎为证，指出栽赃逻辑漏洞。苏凝香助攻，证实该料子仅端妃与皇后持有。两人一唱一和，借物证来源反将一军，恳请皇上彻查内务府账目，洗清冤屈的同时令幕后真凶无处遁形。",
+                "start": 895,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 15,
+            "describe": "暫時脫身，與春桃一起回到【靜安苑】，在床榻及周邊尋找栽贓者留下的細微線索",
+            "start": 900,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "与春桃匆匆离开【凤仪宫】，快步返回【静安苑】",
+                "start": 900,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "检查寝殿门窗及锁扣，确认是否有外人强行闯入或技术开锁的痕迹",
+                "start": 910,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "仔细勘察床榻周边的地面，寻找不属于本苑宫人的脚印或掉落的配饰",
+                "start": 915,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "翻找床褥与枕头缝隙，利用现代细微观察力搜寻栽赃者留下的布料纤维或异物",
+                "start": 925,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "询问春桃关于搜宫前后的所有细节，排查可疑人员的出入时间点",
+                "start": 935,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "在床底及隐蔽角落搜寻是否有残留的香粉气味，以此辨识栽赃者的身份",
+                "start": 945,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "整理搜集到的线索，并将关键发现妥善藏匿以备反击",
+                "start": 955,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 16,
+            "describe": "在【靜安苑】進行復盤，分析宮中輿論走向，規劃如何在冷宮環境下反敗為勝",
+            "start": 960,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "屏退杂役并与春桃核对刚才搜寻到的物证线索",
+                "start": 960,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "运用现代公关思维分析宫中各方势力对“玉玺案”的舆论态度",
+                "start": 970,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "在脑中复盘端妃栽赃的时间线，精准定位逻辑漏洞",
+                "start": 980,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "制定“洗白”方案，规划如何利用冷宫环境博取皇上同情",
+                "start": 995,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "模拟晚间请安时面对端妃的挑衅话术与表情管理",
+                "start": 1005,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "整理略显凌乱的衣衫，保持“嚣张自信”的气场准备出发",
+                "start": 1015,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 17,
+            "describe": "前往【鳳儀宮】進行晚間請安，近距離觀察端妃在計畫受挫後的反應與神色",
+            "start": 1020,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "從靜安苑步行前往鳳儀宮，沿途保持頂流女星的儀態與心理建設",
+                "start": 1020,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "在鳳儀宮門外稍作停留，觀察守門太監的神色以判斷殿內氣氛",
+                "start": 1030,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "進入正殿，在眾人側目下從容向皇后行晚間請安禮",
+                "start": 1035,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "在席位坐定，利用現代公關觀察力鎖定端妃並捕捉其細微表情",
+                "start": 1045,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "故意在端妃看過來時露出自信微笑，測試其心虛程度",
+                "start": 1055,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "傾聽席間其他妃嬪的竊竊私語，分析「玉璽案」後的輿論風向",
+                "start": 1060,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "在端妃開口試探時，以「邏輯跳躍」的說話方式令其難以招架",
+                "start": 1070,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "記錄端妃在計畫受挫後的焦慮小動作，完成心理畫像分析",
+                "start": 1075,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 18,
+            "describe": "在【鳳儀宮】結束請安，頂著眾人非議從容走出，思考宮中勢力的重新洗牌",
+            "start": 1080,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "繼續走在回靜安苑的宮道上，聽完春桃關於宮中輿論的後續彙報，並叮囑其留意各宮動向",
+                "start": 1097,
+                "duration": 6
+              },
+              {
+                "idx": 1,
+                "describe": "運用現代公關邏輯，在腦中復盤今日「玉璽案」各方勢力的反應與站隊，分析端妃等人的心理弱點",
+                "start": 1103,
+                "duration": 20
+              },
+              {
+                "idx": 2,
+                "describe": "思考如何利用此次危機轉化為政治資本，規劃在宮中勢力洗牌後的位次，並籌謀具體的「奪寵」手段以確保上位",
+                "start": 1123,
+                "duration": 17
+              }
+            ]
+          },
+          {
+            "idx": 19,
+            "describe": "在【靜安苑】寢宮中等待聖諭，若未被蕭徹選中則繼續整理今日搜集的線索",
+            "start": 1140,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "跟隨皇上前往【宸暉殿】侍寢並安歇",
+                "start": 1171,
+                "duration": 29
+              }
+            ]
+          },
+          {
+            "idx": 20,
+            "describe": "在【靜安苑】自製面膜護膚，利用現代保養知識修復疲勞，思考下一步生存對策",
+            "start": 1200,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "篩選宮中僅有的珍珠粉與蛋清，準備DIY急救面膜素材",
+                "start": 1200,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "按照現代黃金比例調製面膜泥，修復今日因受審而憔悴的氣色",
+                "start": 1205,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "仔細潔面並將面膜均勻敷在臉上，對鏡觀察這張「頂流臉」的狀態",
+                "start": 1210,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "靜臥等待面膜成膜，腦內復盤「玉璽案」中端妃栽贓的時間線漏洞",
+                "start": 1220,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "運用公關思維構思明日的反擊話術，準備一場宮廷版的「澄清發佈會」",
+                "start": 1235,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "用溫水清洗面膜，按摩面部穴位以緩解全天緊繃的肌肉壓力",
+                "start": 1245,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "塗抹最後一層保養油脂，鎖定護膚成果並堅定生存鬥志",
+                "start": 1255,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 21,
+            "describe": "屏退左右，在【靜安苑】室內進行簡單拉伸，緩解跪了一天的膝蓋壓力",
+            "start": 1260,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "屏退春桃及所有宮女，確保寢殿內環境絕對私密",
+                "start": 1260,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "拆卸繁重的頭面髮簪與外袍，換上便於活動的輕便寢衣",
+                "start": 1265,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "坐在榻上檢查膝蓋處的紅腫淤青，並進行初步的揉按放鬆",
+                "start": 1275,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "坐在毯上進行腿部與髖部拉伸，緩解長時間跪拜帶來的僵硬感",
+                "start": 1280,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "運用現代瑜伽動作進行腰背部復位拉伸，舒緩全天脊椎壓力",
+                "start": 1290,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "進行全身性的靜態放鬆與深呼吸，平復整日緊繃的應激情緒",
+                "start": 1305,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "整理床鋪並飲用少量溫水，為最後的復盤思考做準備",
+                "start": 1315,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 22,
+            "describe": "躺在床上閉目養神，將今日所有細節在腦中過一遍，確保沒有遺漏任何威脅",
+            "start": 1320,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "调整卧姿并轻揉淤青的膝盖",
+                "start": 1320,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "闭目进入深度思考状态，平复今日宫斗的焦躁情绪",
+                "start": 1325,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "脑内复盘「玉玺案」搜宫细节，推演端妃栽赃的时间漏洞",
+                "start": 1330,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "分析皇上听取辩护时的微表情，评估其对自己的信任程度",
+                "start": 1340,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "回想傍晚请安时端妃的反应，寻找其心理防线的弱点",
+                "start": 1350,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "运用公关思维构思明日的「洗白」话术，准备应对二次盘问",
+                "start": 1360,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "确认贴身丫鬟春桃的安危，排查身边潜在的内奸",
+                "start": 1370,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "进行最后的深呼吸，放空大脑准备进入睡眠",
+                "start": 1375,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 23,
+            "describe": "睡觉",
+            "start": 1380,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "調整睡姿，平復因復盤「玉璽案」而緊繃的神經",
+                "start": 1380,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "進入淺眠狀態，潛意識中仍在警惕窗外的風吹草動",
+                "start": 1390,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "在夢境中潛意識地重演今日辯論，鞏固心理防線",
+                "start": 1400,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "進入深度睡眠，讓因久跪而痠痛的膝蓋得到緩解",
+                "start": 1415,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "徹底陷入熟睡，為明日的宮廷生存戰儲備體力",
+                "start": 1430,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 24,
+            "describe": "睡覺",
+            "start": 1440,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 25,
+            "describe": "睡覺",
+            "start": 1500,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 26,
+            "describe": "睡覺",
+            "start": 1560,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 27,
+            "describe": "睡覺",
+            "start": 1620,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 28,
+            "describe": "睡覺",
+            "start": 1680,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 29,
+            "describe": "睡覺",
+            "start": 1740,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 30,
+            "describe": "起床，簡單梳洗後前往【鳳儀宮】進行晨間請安",
+            "start": 1800,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 31,
+            "describe": "在【鳳儀宮】完成晨間請安，得知寢宮已被搜查，面對眾人非議保持囂張自信的儀態",
+            "start": 1860,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 32,
+            "describe": "在【鳳儀宮】偏殿等待處理，內心利用現代公關邏輯分析「玉璽案」的輿論走向",
+            "start": 1920,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 33,
+            "describe": "被扣留在【鳳儀宮正廳】，等待皇上下朝處理「玉璽案」",
+            "start": 1980,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 34,
+            "describe": "在【鳳儀宮正廳】頂著壓力維持頂流女星的表情管理，觀察端妃等人的神色漏洞",
+            "start": 2040,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 35,
+            "describe": "持續被扣留，利用跳躍思維推演「蔻丹」與「絲綢」證據鏈中的邏輯悖論",
+            "start": 2100,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 36,
+            "describe": "在【鳳儀宮】正殿等待皇上駕到，準備開啟降維打擊模式進行辯護",
+            "start": 2160,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 37,
+            "describe": "在【鳳儀宮】正殿面見皇上與眾妃嬪，利用現代公關邏輯引爆證據悖論進行辯護與反殺",
+            "start": 2220,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 38,
+            "describe": "持續在正殿進行言辭交鋒，以極強的抗壓能力將栽贓戲碼轉化為對端妃的收割",
+            "start": 2280,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 39,
+            "describe": "與侍女春桃回到【靜安苑】尋找玉璽案相關線索，進一步坐實端妃栽贓的證據",
+            "start": 2340,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 40,
+            "describe": "在【靜安苑】整理搜集到的細節物證，與春桃商議如何進一步引導宮中輿論",
+            "start": 2400,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 41,
+            "describe": "前往【鳳儀宮】進行晚間請安，觀察端妃的反應並持續引導宮中輿論",
+            "start": 2460,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 42,
+            "describe": "結束晚間請安，在回宮路上利用「頂流」手段向各宮眼線散佈有利於自己的消息",
+            "start": 2520,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 43,
+            "describe": "在【靜安苑】寢宮中等待聖駕，雖內心抗拒皇權但仍需維持表面規矩",
+            "start": 2580,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 44,
+            "describe": "在【靜安苑】自製面膜護膚，復盤今日戰果並規劃下一步生存策略",
+            "start": 2640,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 45,
+            "describe": "繼續護膚流程，在腦中完善「玉璽案」後續的輿論引導與洗白計劃",
+            "start": 2700,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 46,
+            "describe": "整理寢殿，在極強的抗壓狀態下放鬆神經，準備入睡",
+            "start": 2760,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 47,
+            "describe": "睡覺",
+            "start": 2820,
+            "duration": 60,
+            "decompose": {}
+          }
+        ]
+      },
+      "associate": {
+        "memory": {
+          "event": [
+            "node_262",
+            "node_261",
+            "node_260",
+            "node_259",
+            "node_258",
+            "node_257",
+            "node_256",
+            "node_255",
+            "node_254",
+            "node_253",
+            "node_252",
+            "node_251",
+            "node_249",
+            "node_248",
+            "node_247",
+            "node_245",
+            "node_243",
+            "node_242",
+            "node_223",
+            "node_222",
+            "node_221",
+            "node_220",
+            "node_219",
+            "node_218",
+            "node_217",
+            "node_216",
+            "node_215",
+            "node_214",
+            "node_213",
+            "node_212",
+            "node_211",
+            "node_210",
+            "node_209",
+            "node_208",
+            "node_207",
+            "node_206",
+            "node_205",
+            "node_204",
+            "node_203",
+            "node_201",
+            "node_200",
+            "node_199",
+            "node_198",
+            "node_197",
+            "node_196",
+            "node_178",
+            "node_177",
+            "node_176",
+            "node_175",
+            "node_174",
+            "node_173",
+            "node_172",
+            "node_171",
+            "node_170",
+            "node_168",
+            "node_167",
+            "node_166",
+            "node_165",
+            "node_164",
+            "node_163",
+            "node_162",
+            "node_161",
+            "node_160",
+            "node_159",
+            "node_158",
+            "node_157",
+            "node_139",
+            "node_137",
+            "node_136",
+            "node_135",
+            "node_134",
+            "node_132",
+            "node_131",
+            "node_130",
+            "node_129",
+            "node_128",
+            "node_127",
+            "node_126",
+            "node_125",
+            "node_124",
+            "node_122",
+            "node_121",
+            "node_119",
+            "node_101",
+            "node_100",
+            "node_99",
+            "node_98",
+            "node_97",
+            "node_96",
+            "node_94",
+            "node_93",
+            "node_92",
+            "node_91",
+            "node_90",
+            "node_89",
+            "node_88",
+            "node_87",
+            "node_86",
+            "node_85",
+            "node_84",
+            "node_83",
+            "node_65",
+            "node_64",
+            "node_63",
+            "node_61",
+            "node_60",
+            "node_59",
+            "node_58",
+            "node_57",
+            "node_56",
+            "node_55",
+            "node_54",
+            "node_53",
+            "node_52",
+            "node_50",
+            "node_49",
+            "node_48",
+            "node_47",
+            "node_46",
+            "node_45",
+            "node_44",
+            "node_26",
+            "node_25",
+            "node_24",
+            "node_23",
+            "node_22",
+            "node_21",
+            "node_20",
+            "node_19",
+            "node_18",
+            "node_17",
+            "node_16",
+            "node_15",
+            "node_14",
+            "node_13",
+            "node_12",
+            "node_11",
+            "node_10",
+            "node_9",
+            "node_8",
+            "node_7",
+            "node_6",
+            "node_5",
+            "node_4",
+            "node_2"
+          ],
+          "thought": [
+            "node_263",
+            "node_240",
+            "node_239",
+            "node_238",
+            "node_237",
+            "node_236",
+            "node_235",
+            "node_234",
+            "node_233",
+            "node_232",
+            "node_231",
+            "node_230",
+            "node_229",
+            "node_228",
+            "node_227",
+            "node_226",
+            "node_225",
+            "node_224",
+            "node_195",
+            "node_194",
+            "node_193",
+            "node_192",
+            "node_191",
+            "node_190",
+            "node_189",
+            "node_188",
+            "node_187",
+            "node_186",
+            "node_185",
+            "node_184",
+            "node_183",
+            "node_182",
+            "node_181",
+            "node_180",
+            "node_179",
+            "node_156",
+            "node_155",
+            "node_154",
+            "node_153",
+            "node_152",
+            "node_151",
+            "node_150",
+            "node_149",
+            "node_148",
+            "node_147",
+            "node_146",
+            "node_145",
+            "node_144",
+            "node_143",
+            "node_142",
+            "node_141",
+            "node_140",
+            "node_118",
+            "node_117",
+            "node_116",
+            "node_115",
+            "node_114",
+            "node_113",
+            "node_112",
+            "node_111",
+            "node_110",
+            "node_109",
+            "node_108",
+            "node_107",
+            "node_106",
+            "node_105",
+            "node_104",
+            "node_103",
+            "node_102",
+            "node_82",
+            "node_81",
+            "node_80",
+            "node_79",
+            "node_78",
+            "node_77",
+            "node_76",
+            "node_75",
+            "node_74",
+            "node_73",
+            "node_72",
+            "node_71",
+            "node_70",
+            "node_69",
+            "node_68",
+            "node_67",
+            "node_66",
+            "node_43",
+            "node_42",
+            "node_41",
+            "node_40",
+            "node_39",
+            "node_38",
+            "node_37",
+            "node_36",
+            "node_35",
+            "node_34",
+            "node_33",
+            "node_32",
+            "node_31",
+            "node_30",
+            "node_29",
+            "node_28",
+            "node_27",
+            "node_0"
+          ],
+          "chat": [
+            "node_250",
+            "node_246",
+            "node_244",
+            "node_241",
+            "node_202",
+            "node_169",
+            "node_138",
+            "node_133",
+            "node_123",
+            "node_120",
+            "node_95",
+            "node_62",
+            "node_51",
+            "node_3",
+            "node_1"
+          ]
+        }
+      },
+      "chats": [
+        [
+          "柳如眉",
+          "妹妹這身子骨可還受得住？瞧這膝蓋紅腫的，姐姐看著都心疼。方才在大殿上，妹妹那些話可真是讓姐姐驚出一身冷汗，若非皇后娘娘聖明，姐姐差點都要被妹妹誤會了。如今天色已晚，妹妹還是早些回去歇著吧，畢竟……今晚皇上未必有興致去靜安苑瞧一個待罪之人，姐姐倒是要回宮好好梳洗，盼著皇上能想起瑤華宮的舊人呢。"
+        ],
+        [
+          "林晚星",
+          "姐姐這齣‘姐妹情深’演得可真是有失水準，劇本漏洞百出，連群演都找得不專業。那匣子上的蔻丹印子還沒乾透呢，姐姐就急著給自己立‘清白’人設了？至於皇上今晚去哪兒……呵，姐姐既然自詡是瑤華宮的‘舊人’，那就趕緊回去多撲點粉，免得皇上見了這張寫滿算計的臉倒了胃口。我這膝蓋雖然疼，但心裡亮堂，倒是姐姐這侍寢的福氣，我瞧著你這副心虛的模樣，怕是也未必接得住，咱們走著瞧。"
+        ],
+        [
+          "春桃",
+          "（聲音細微且帶著輕微的顫抖，手仍死死拽著林晚星的衣角，眼神怯懦地躲閃著周圍妃嬪的視線）小主……咱們快些回屋吧。您的膝蓋跪了那麼久，定是疼得厲害，奴婢回去就給您冰敷。方才在大殿上……奴婢真怕咱們出不來了，那些人的嘴臉真可怕，小主往後可千萬要小心她們啊。"
+        ],
+        [
+          "林晚星",
+          "別抖了，這點小場面就把你嚇成這樣？剛才那場‘澄清發佈會’我可是超常發揮。瞧瞧那些女人，一個個穿得花枝招展，眼珠子都快黏到皇上身上去了，不就是嫉妒我沒被送進慎刑司，還想著今晚能被翻牌子去【宸暉殿】侍寢嗎？呵，這後宮的‘C位’哪是那麼好站的。走，回靜安苑，膝蓋這點傷算什麼，回去給我敷上，我還得複盤一下端妃那個老綠茶的下一步動作。今晚這侍寢的名額，我若是拿不到，難不成真要看她們在那兒耀武揚威？"
+        ],
+        [
+          "春桃",
+          "（嚇得趕緊伸手去捂林晚星的嘴，又驚恐地縮回手，壓低聲音急切道）小主，慎言啊！這兒還在【鳳儀宮】地界，若是被旁人聽了去，又要生出事端了。奴婢雖不懂什麼‘C位’，但瞧著那些娘娘們方才巴不得咱們被帶走的眼神，奴婢心裡就發憷。若今晚皇上真能翻了您的牌子去【宸暉殿】，那自然是天大的福氣，也能叫她們再不敢隨意作踐咱們。只是您的膝蓋……奴婢瞧著都心疼，咱們快些回【靜安苑】吧，奴婢定會仔細著幫您冰敷揉藥，絕不耽誤了您晚上的大事。"
+        ],
+        [
+          "春桃",
+          "小主，您快別再想那些『邏輯』了，身子要緊啊。奴婢瞧著您這膝蓋紅腫得厲害，心疼得跟什麼似的，快讓奴婢先給您冰敷一下。今日在那大殿上，奴婢真是嚇得魂都沒了，還好小主臨危不亂。只是……您剛才還唸叨著要爭今晚的侍寢，可這腿傷成這樣，待會兒皇上若是真來了，可怎麼伺候呀？"
+        ],
+        [
+          "林晚星",
+          "傻丫頭，這點紅腫算什麼？這叫『工傷』，懂嗎？在演藝圈，這點傷連熱搜前十都上不去。現在正是皇上對我心存愧疚、對端妃起疑的黃金公關期，這可是流量最高的時候。如果不趁熱打鐵把這『C位』佔了，難道等端妃想好對策來反殺我？至於怎麼『伺候』……呵，你家小主我可是演技派，這雙腿越是走不動，越能顯出我受的委屈。這叫『破碎感』美學，男人最吃這一套。你就等著看我如何把這場栽贓危機，轉化為『年度最佳公關反殺案例』吧。"
+        ]
+      ],
+      "currently": "林晚星正身处宸暉殿的權力核心，利用侍寢後的信任紅利，以現代公關的降維邏輯精準引爆「蔻丹」與「絲綢」的證據悖論，將這場拙劣的栽贓戲碼徹底轉化為一場對幕後黑手的降維收割與華麗反殺",
+      "action": {
+        "event": {
+          "subject": "林晚星",
+          "predicate": "正在",
+          "object": "睡觉",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "靜安苑",
+            "靜安苑休息區",
+            "床"
+          ],
+          "emoji": "😴"
+        },
+        "obj_event": {
+          "subject": "床",
+          "predicate": "被占用",
+          "object": "林晚星",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "靜安苑",
+            "靜安苑休息區",
+            "床"
+          ],
+          "emoji": "🛌"
+        },
+        "start": "20250214-02:00:00",
+        "duration": 60
+      },
+      "coord": [
+        95,
+        13
+      ]
+    },
+    "柳如眉": {
+      "config_path": "assets\\village\\agents\\柳如眉\\agent.json",
+      "status": {
+        "poignancy": 104
+      },
+      "schedule": {
+        "create": "20250214-00:00:00",
+        "daily_schedule": [
+          {
+            "idx": 0,
+            "describe": "睡觉",
+            "start": 0,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "屏退左右宫人并独自检查寝殿内是否有泄密隐患",
+                "start": 0,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "卸下素净的妆发，在镜前审视自己毫无破绽的伪装",
+                "start": 10,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "躺在榻上闭目复盘栽赃林晚星的每一个逻辑细节",
+                "start": 20,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "熄灭寝殿烛火，在黑暗中平复多疑且兴奋的思绪",
+                "start": 35,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "逐渐进入浅层睡眠，维持着心思缜密的警觉",
+                "start": 40,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "彻底进入深度睡眠以保证清晨请安的精力",
+                "start": 50,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 1,
+            "describe": "睡觉",
+            "start": 60,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "进入深度沉睡状态",
+                "start": 60,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "在潜意识中继续构思栽赃林晚星的细节",
+                "start": 75,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "因天性多疑在睡梦中轻微调整呼吸",
+                "start": 85,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "维持优雅且防备的睡姿以保持仪态",
+                "start": 90,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "梦见自己成功博取圣宠并权倾后宫",
+                "start": 100,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "处于浅眠状态并对周围动静保持警觉",
+                "start": 115,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 2,
+            "describe": "睡觉",
+            "start": 120,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "彻底放松身体进入深度睡眠",
+                "start": 120,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "在潜意识中反复推演玉玺案的栽赃细节",
+                "start": 130,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "因多疑性格在浅眠中保持对外界动静的警觉",
+                "start": 140,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "梦见林晚星被废黜后的凄惨景象",
+                "start": 145,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "翻身并调整睡姿以缓解身体疲劳",
+                "start": 155,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "进入无梦的沉睡阶段以积蓄明日斗争的精力",
+                "start": 160,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "维持平稳呼吸直至进入下一个睡眠周期",
+                "start": 170,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 3,
+            "describe": "睡觉",
+            "start": 180,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 4,
+            "describe": "睡觉",
+            "start": 240,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 5,
+            "describe": "睡觉",
+            "start": 300,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 6,
+            "describe": "前往【鳳儀宮】進行晨間請安",
+            "start": 360,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 7,
+            "describe": "在【鳳儀宮】完成晨間請安後返回【瑤華宮】",
+            "start": 420,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 8,
+            "describe": "在【瑤華宮】用早膳並思索玉璽案的後續計畫",
+            "start": 480,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 9,
+            "describe": "在【瑤華宮】靜坐，翻閱詩書以掩蓋陰沉心思",
+            "start": 540,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 10,
+            "describe": "在【瑤華宮】小憩，保持精力應對下午的審理",
+            "start": 600,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 11,
+            "describe": "在【瑤華宮】傳膳並簡單用午膳",
+            "start": 660,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 12,
+            "describe": "在【瑤華宮】整理儀容並挑選素淨頭飾，為午間請安的「好戲」做準備",
+            "start": 720,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "撤下華麗的首飾並更換一套顏色素雅的宮裝",
+                "start": 720,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "在首飾盒中挑選那支素淨的銀簪，對鏡比劃位置",
+                "start": 730,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "重新調整妝容，特意將唇色化得淡些以顯出「憂心」之態",
+                "start": 735,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "屏退左右，在腦中最後梳理一遍栽贓林晚星的細節",
+                "start": 745,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "練習如何在審理中不經意地流露出對林晚星的「惋惜」",
+                "start": 755,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "仔細檢查隨身手帕，確保沒有留下任何與玉璽案相關的破綻",
+                "start": 765,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "整理儀容，由宮女攙扶走出【瑤華宮】前往【鳳儀宮】",
+                "start": 770,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 13,
+            "describe": "到達【鳳儀宮正廳】參加午間請安，在審理中扮演「老好人」並暗中補刀坐實林晚星罪名",
+            "start": 780,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "觀察皇后與眾嬪妃的神色，確認輿論在自己與皇后的引導下，已完全朝向不利於林晚星的方向發展",
+                "start": 817,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "趁熱打鐵，不經意地提及玉璽案的關鍵疑點，暗中補刀以坐實林晚星的罪名",
+                "start": 822,
+                "duration": 13
+              },
+              {
+                "idx": 2,
+                "describe": "靜待審理進度，維持偽善的憂慮神情以掩飾內心的陰沉",
+                "start": 835,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 14,
+            "describe": "繼續在【鳳儀宮正廳】關注審理進度，以偽善之姿引導輿論",
+            "start": 840,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "掩面拭淚，整理因爭執而略顯凌亂的鬢髮，以「清者自清」的委屈姿態告退，結束發言並離開正廳。",
+                "start": 891,
+                "duration": 9
+              }
+            ]
+          },
+          {
+            "idx": 15,
+            "describe": "離開【鳳儀宮】，前往【御花園】準備散步",
+            "start": 900,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "假意向皇后及眾妃嬪告退，並對林晚星投以同情的目光",
+                "start": 900,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "走出鳳儀宮正廳，在宮門口低聲叮囑心腹宮女留意殿內審理的最終結果",
+                "start": 910,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "穿過長廊前往御花園，途中在腦中復盤剛才的供詞以防留下破綻",
+                "start": 915,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "抵達御花園，選定一處皇上御駕回宮必經的石橋附近",
+                "start": 930,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "藉著池水倒影再次整理素淨的頭飾，調整出憂心忡忡的神態",
+                "start": 940,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "屏退左右在花徑旁駐足，側耳傾聽遠處是否有聖駕儀仗的聲響",
+                "start": 950,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 16,
+            "describe": "在【御花園】散步，藉機尋找與皇上偶遇的機會",
+            "start": 960,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "抵達御花園景致最佳處，觀察周遭是否有聖駕儀仗",
+                "start": 960,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "調整儀態與神情，擺出一副因「玉璽案」而憂心忡忡的柔弱模樣",
+                "start": 970,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "沿著皇上平日散步的必經小徑緩步前行，製造偶遇機會",
+                "start": 975,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "停留在堆秀山附近假裝賞花，實則暗中留意遠處動向",
+                "start": 985,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "低聲叮囑貼身丫鬟去前方轉角處探看皇上是否朝此處走來",
+                "start": 995,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "在腦中反覆推敲待會兒在鳳儀宮試探林晚星的說辭",
+                "start": 1000,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "再次整理素淨的簪子與衣角，確保形象完美無瑕",
+                "start": 1010,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "帶著未遇見皇上的落寞神情離開，轉向鳳儀宮方向",
+                "start": 1015,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 17,
+            "describe": "前往【鳳儀宮】參加晚間請安，假意關懷林晚星實則試探其是否發現線索並持續補刀",
+            "start": 1020,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "遭皇后斥責後心中一驚，迅速收斂爭寵之色，低頭唯唯諾諾以掩飾被喝退的尷尬",
+                "start": 1071,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "整理儀容，在眾人注視下強撐表面優雅，向皇后行禮告退並快步離開【鳳儀宮】回宮待命",
+                "start": 1076,
+                "duration": 4
+              }
+            ]
+          },
+          {
+            "idx": 18,
+            "describe": "晚間請安結束，離開【鳳儀宮】返回寢宮",
+            "start": 1080,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "結束對林晚星的假意關懷，最後一次觀察其神色以確認其是否起疑",
+                "start": 1080,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "柳如眉假意憐憫實則嘲諷林晚星受罰，並炫耀聖寵；林晚星則犀利揭穿其栽贓嫁禍的破綻，反諷其心機深重、容貌難再。兩人唇槍舌戰，互不相讓，盡顯宮鬥火藥味。",
+                "start": 1085,
+                "duration": 1
+              },
+              {
+                "idx": 2,
+                "describe": "壓下心中怒火，向皇后及眾妃嬪行告退禮，維持端莊賢淑、滴水不漏的文臣之女形象",
+                "start": 1086,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "離開【鳳儀宮】，在宮道上低聲詢問心腹宮女今日皇上的行蹤與心情，確認聖駕抵達時間",
+                "start": 1091,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "緩步穿過宮道返回【瑤華宮】，內心反覆推敲玉璽案的細節並針對林晚星的指控補全破綻",
+                "start": 1101,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "回到【瑤華宮】，吩咐宮人撤下刻意扮素的頭飾並準備更換侍寢用的華服",
+                "start": 1116,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "焚香更衣並對鏡精細補妝，掩蓋方才爭執後的慍色，務求在19:00前做好迎接聖駕的萬全準備",
+                "start": 1126,
+                "duration": 14
+              }
+            ]
+          },
+          {
+            "idx": 19,
+            "describe": "準時回到【瑤華宮】等待聖駕，若皇上親臨則跟隨前往【宸暉殿】伴駕侍寢",
+            "start": 1140,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "回到【瑤華宮】更換輕便但不失優雅的常服，準備接駕",
+                "start": 1140,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "吩咐宮女點上皇上喜愛的檀香，並撤下可能引起懷疑的雜物",
+                "start": 1150,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "坐在案前假意翻閱詩集，以此展現文臣之女的恬靜與才情",
+                "start": 1155,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "屏退左右，獨自推敲今日在【鳳儀宮】的言行有無留下破綻",
+                "start": 1170,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "預演若皇上駕臨，該如何以「不經意」的方式提及林晚星的疑點",
+                "start": 1180,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "整理鬢角髮絲，神情轉為憂鬱，靜候宮門外傳來聖駕抵達的動靜",
+                "start": 1190,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 20,
+            "describe": "在【瑤華宮】等待聖駕（若皇上選中則在【宸暉殿】與皇上共用晚膳）",
+            "start": 1200,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在镜前仔细检查妆容与素净发饰，确保呈现出楚楚可怜的模样",
+                "start": 1200,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "叮嘱宫女备好皇上素日偏好的清茶，并要求时刻保持温热",
+                "start": 1205,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "在屋内屏退左右，独自推演玉玺案的细节以防露出破绽",
+                "start": 1215,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "坐在窗边假装翻阅经书，实则练习“为姐妹担忧”的伪善神情",
+                "start": 1225,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "派贴身太监去打探皇上是否已翻牌子或离开【宸暉殿】",
+                "start": 1235,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "亲自点燃安神香，营造出宁静柔和的宫室氛围待驾",
+                "start": 1245,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "整理衣襟并端坐于正厅，屏息凝神听着宫门外的动静",
+                "start": 1255,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 21,
+            "describe": "在【瑤華宮】等待聖駕（若皇上選中則在【宸暉殿】伴駕侍奉）",
+            "start": 1260,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在鏡前細細端詳妝容，確保自己看起來清麗且帶著一絲憂心忡忡",
+                "start": 1260,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "喚宮女進殿詢問各宮動向，打探皇上是否已前往其他妃嬪處",
+                "start": 1270,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "獨自坐在榻上，在心中反覆推演如何應對皇上對玉璽案的盤問",
+                "start": 1280,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "親自挑撥香爐中的沉香，營造出恬靜淡雅的氛圍以迎聖駕",
+                "start": 1295,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "翻閱詩書，準備在皇上到來時展現文臣之女的才情與大度",
+                "start": 1305,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "望向殿外夜色，做最後的等待並調整偽裝的情緒",
+                "start": 1315,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 22,
+            "describe": "若皇上未到訪則在【瑤華宮】安歇，若在【宸暉殿】侍寢則與皇上同床安歇",
+            "start": 1320,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "确认圣驾今夜不会到访，屏退寝殿内的宫女",
+                "start": 1320,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "摘下那支用于表现“担忧”的素净簪子并妥善收起",
+                "start": 1325,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "卸下妆发并仔细洗漱，洗去白日的伪装",
+                "start": 1330,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "更换轻便的寝衣准备在【瑶华宫】安歇",
+                "start": 1340,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "坐在榻边复盘今日玉玺案中林晚星的每一个反应",
+                "start": 1345,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "仔细推敲栽赃证据的细节，确保没有任何破绽",
+                "start": 1355,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "饮下一小盏安神茶以平息内心的阴沉算计",
+                "start": 1365,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "吹熄灯火并躺下，准备进入梦乡",
+                "start": 1370,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "在黑暗中勾勒明日晨间请安时的“补刀”措辞",
+                "start": 1375,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 23,
+            "describe": "安歇",
+            "start": 1380,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "調整睡姿，確保即使在睡夢中也顯得溫婉無害",
+                "start": 1380,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "屏息凝神，確認殿內環境已完全安靜",
+                "start": 1385,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "腦中最後閃過明日對付林晚星的說辭",
+                "start": 1390,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "進入淺眠，維持平穩且規律的呼吸",
+                "start": 1395,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "進入深度睡眠狀態",
+                "start": 1405,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "在夢中持續保持心思縝密的警覺感",
+                "start": 1420,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "沉睡以備翌日晨間請安之需",
+                "start": 1430,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 24,
+            "describe": "睡觉",
+            "start": 1440,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 25,
+            "describe": "睡觉",
+            "start": 1500,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 26,
+            "describe": "睡觉",
+            "start": 1560,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 27,
+            "describe": "睡觉",
+            "start": 1620,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 28,
+            "describe": "睡觉",
+            "start": 1680,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 29,
+            "describe": "睡觉",
+            "start": 1740,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 30,
+            "describe": "前往【鳳儀宮】進行晨間請安",
+            "start": 1800,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 31,
+            "describe": "晨間請安結束，返回【瑤華宮】用早膳，思索今日佈局",
+            "start": 1860,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 32,
+            "describe": "在【瑤華宮】靜坐，屏退左右，再次檢查是否有遺漏的破綻",
+            "start": 1920,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 33,
+            "describe": "練習溫婉哀戚的神情，確保在審理時能完美扮演「老好人」",
+            "start": 1980,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 34,
+            "describe": "翻閱詩書，平復心緒，以縝密的心思推演林晚星可能的辯解",
+            "start": 2040,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 35,
+            "describe": "吩咐宮女準備清淡茶水，維持素雅形象，等待午間審理",
+            "start": 2100,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 36,
+            "describe": "在【瑤華宮】整理儀容，特意抹除指尖流金蔻丹，準備前往鳳儀宮看好戲",
+            "start": 2160,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 37,
+            "describe": "到達【鳳儀宮正廳】參加午間請安，在玉璽案審理中扮演「老好人」暗中補刀",
+            "start": 2220,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 38,
+            "describe": "在【鳳儀宮】配合皇后審理，利用謊言拉攏人心，將證據引向林晚星",
+            "start": 2280,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 39,
+            "describe": "審理告一段落，離開鳳儀宮前往【御花園】散步，尋求偶遇皇上的機會",
+            "start": 2340,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 40,
+            "describe": "在【御花園】湖邊駐足，維持端莊柔弱的姿態，期盼聖駕降臨以博取聖寵",
+            "start": 2400,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 41,
+            "describe": "前往【鳳儀宮】參加晚間請安，特意假意關懷林晚星，實則試探其虛實並補刀",
+            "start": 2460,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 42,
+            "describe": "晚間請安結束，帶著得意的心理步履款款返回【瑤華宮】",
+            "start": 2520,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 43,
+            "describe": "準時回到【瑤華宮】沐浴焚香等待聖駕，若皇上親臨則前往【宸暉殿】伴駕",
+            "start": 2580,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 44,
+            "describe": "若皇上選中侍寢則在【宸暉殿】共用晚膳；若否則在【瑤華宮】獨自用膳",
+            "start": 2640,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 45,
+            "describe": "若侍寢則在【宸暉殿】溫柔承恩；若否則在【瑤華宮】燈下籌謀明日計畫",
+            "start": 2700,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 46,
+            "describe": "若皇上未駕臨，則在【瑤華宮】安歇；若皇上駕臨，則在【宸暉殿】同床安歇",
+            "start": 2760,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 47,
+            "describe": "睡觉",
+            "start": 2820,
+            "duration": 60,
+            "decompose": {}
+          }
+        ]
+      },
+      "associate": {
+        "memory": {
+          "event": [
+            "node_214",
+            "node_213",
+            "node_212",
+            "node_211",
+            "node_210",
+            "node_209",
+            "node_208",
+            "node_207",
+            "node_206",
+            "node_205",
+            "node_204",
+            "node_203",
+            "node_202",
+            "node_201",
+            "node_200",
+            "node_199",
+            "node_198",
+            "node_197",
+            "node_196",
+            "node_195",
+            "node_194",
+            "node_193",
+            "node_192",
+            "node_191",
+            "node_190",
+            "node_189",
+            "node_188",
+            "node_187",
+            "node_186",
+            "node_185",
+            "node_184",
+            "node_183",
+            "node_182",
+            "node_181",
+            "node_180",
+            "node_179",
+            "node_178",
+            "node_177",
+            "node_176",
+            "node_175",
+            "node_174",
+            "node_156",
+            "node_155",
+            "node_154",
+            "node_153",
+            "node_152",
+            "node_151",
+            "node_150",
+            "node_149",
+            "node_148",
+            "node_147",
+            "node_146",
+            "node_145",
+            "node_144",
+            "node_143",
+            "node_141",
+            "node_140",
+            "node_139",
+            "node_138",
+            "node_137",
+            "node_136",
+            "node_135",
+            "node_133",
+            "node_132",
+            "node_131",
+            "node_130",
+            "node_129",
+            "node_128",
+            "node_127",
+            "node_126",
+            "node_125",
+            "node_124",
+            "node_123",
+            "node_105",
+            "node_104",
+            "node_103",
+            "node_101",
+            "node_100",
+            "node_99",
+            "node_98",
+            "node_97",
+            "node_96",
+            "node_94",
+            "node_93",
+            "node_92",
+            "node_91",
+            "node_90",
+            "node_89",
+            "node_88",
+            "node_87",
+            "node_86",
+            "node_85",
+            "node_84",
+            "node_68",
+            "node_67",
+            "node_66",
+            "node_65",
+            "node_64",
+            "node_63",
+            "node_62",
+            "node_61",
+            "node_60",
+            "node_59",
+            "node_58",
+            "node_57",
+            "node_56",
+            "node_55",
+            "node_54",
+            "node_53",
+            "node_52",
+            "node_51",
+            "node_50",
+            "node_49",
+            "node_48",
+            "node_47",
+            "node_29",
+            "node_28",
+            "node_27",
+            "node_26",
+            "node_25",
+            "node_24",
+            "node_23",
+            "node_22",
+            "node_21",
+            "node_19",
+            "node_18",
+            "node_17",
+            "node_16",
+            "node_15",
+            "node_14",
+            "node_13",
+            "node_12",
+            "node_11",
+            "node_10",
+            "node_9",
+            "node_8",
+            "node_7",
+            "node_6",
+            "node_5",
+            "node_4",
+            "node_3",
+            "node_2",
+            "node_1"
+          ],
+          "thought": [
+            "node_215",
+            "node_173",
+            "node_172",
+            "node_171",
+            "node_170",
+            "node_169",
+            "node_168",
+            "node_167",
+            "node_166",
+            "node_165",
+            "node_164",
+            "node_163",
+            "node_162",
+            "node_161",
+            "node_160",
+            "node_159",
+            "node_158",
+            "node_157",
+            "node_122",
+            "node_121",
+            "node_120",
+            "node_119",
+            "node_118",
+            "node_117",
+            "node_116",
+            "node_115",
+            "node_114",
+            "node_113",
+            "node_112",
+            "node_111",
+            "node_110",
+            "node_109",
+            "node_108",
+            "node_107",
+            "node_106",
+            "node_83",
+            "node_82",
+            "node_81",
+            "node_80",
+            "node_79",
+            "node_78",
+            "node_77",
+            "node_76",
+            "node_75",
+            "node_74",
+            "node_73",
+            "node_72",
+            "node_71",
+            "node_70",
+            "node_69",
+            "node_46",
+            "node_45",
+            "node_44",
+            "node_43",
+            "node_42",
+            "node_41",
+            "node_40",
+            "node_39",
+            "node_38",
+            "node_37",
+            "node_36",
+            "node_35",
+            "node_34",
+            "node_33",
+            "node_32",
+            "node_31",
+            "node_30",
+            "node_0"
+          ],
+          "chat": [
+            "node_142",
+            "node_134",
+            "node_102",
+            "node_95",
+            "node_20"
+          ]
+        }
+      },
+      "chats": [],
+      "currently": "柳如眉正以一副素净温婉的姿态步入凤仪宫，她已彻底抹除指尖那抹致命的流金蔻丹，准备在看似求情的言辞中精准补刀，利用缜密的逻辑陷阱将林晚星推入万劫不复的深渊，以此博取圣宠并实现权力的逆转",
+      "action": {
+        "event": {
+          "subject": "柳如眉",
+          "predicate": "正在",
+          "object": "睡觉",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "瑤華宮",
+            "瑤華宮休息區",
+            "床"
+          ],
+          "emoji": "😴"
+        },
+        "obj_event": {
+          "subject": "床",
+          "predicate": "被占用",
+          "object": "柳如眉",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "瑤華宮",
+            "瑤華宮休息區",
+            "床"
+          ],
+          "emoji": "🛌"
+        },
+        "start": "20250214-02:00:00",
+        "duration": 60
+      },
+      "coord": [
+        7,
+        57
+      ]
+    },
+    "華嵐": {
+      "config_path": "assets\\village\\agents\\華嵐\\agent.json",
+      "status": {
+        "poignancy": 109
+      },
+      "schedule": {
+        "create": "20250214-00:00:00",
+        "daily_schedule": [
+          {
+            "idx": 0,
+            "describe": "睡覺",
+            "start": 0,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在宸暉殿龍榻上調整睡姿，確保在皇上身側即便入眠亦保持端莊儀態",
+                "start": 0,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "閉目凝神，在腦中最後復盤一次玉璽案的細節以確保萬無一失",
+                "start": 5,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "帶著身為皇后的掌控感與勝券在握的冷傲進入淺層睡眠",
+                "start": 15,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "進入深度睡眠，藉此恢復體力以應對清晨的嬪妃請安與搜宮",
+                "start": 30,
+                "duration": 20
+              },
+              {
+                "idx": 4,
+                "describe": "在皇上身側安穩沉睡，展現母儀天下的從容氣度",
+                "start": 50,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 1,
+            "describe": "睡覺",
+            "start": 60,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "保持端莊的睡姿進入深度睡眠",
+                "start": 60,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "在宸暉殿的龍榻上安穩沉睡",
+                "start": 70,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "於潛意識中維持皇后的威嚴儀態",
+                "start": 80,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "處於無夢的深度休息狀態",
+                "start": 90,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "稍微調整呼吸頻率以保持安眠",
+                "start": 105,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "繼續在皇側享受寧靜的睡眠",
+                "start": 110,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "維持深度睡眠以積蓄清晨請安的精力",
+                "start": 115,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 2,
+            "describe": "睡覺",
+            "start": 120,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在宸暉殿龍榻上進入深度睡眠",
+                "start": 120,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "於睡夢中下意識調整睡姿以保持皇后端莊儀態",
+                "start": 135,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "沉浸於安穩的睡眠中藉此修復精力",
+                "start": 140,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "在潛意識中維持對周遭環境的警覺並繼續酣睡",
+                "start": 155,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "夢見玉璽案局勢盡在掌握而神情舒展",
+                "start": 165,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "伴於聖側並在靜謐中維持平穩呼吸入眠",
+                "start": 175,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 3,
+            "describe": "睡覺",
+            "start": 180,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 4,
+            "describe": "睡覺",
+            "start": 240,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 5,
+            "describe": "睡覺",
+            "start": 300,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 6,
+            "describe": "接受嬪妃晨間請安並安排搜宮",
+            "start": 360,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 7,
+            "describe": "坐鎮鳳儀宮聽取各處搜宮進度彙報",
+            "start": 420,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 8,
+            "describe": "處理內務府呈遞的宮廷日常事務",
+            "start": 480,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 9,
+            "describe": "巡視後宮各處，彰顯皇后威儀",
+            "start": 540,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 10,
+            "describe": "返回鳳儀宮更衣，準備應對搜宮結果",
+            "start": 600,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 11,
+            "describe": "在靜安苑發現遺失的玉璽並將靜常在與春桃扣押在【鳳儀宮】",
+            "start": 660,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 12,
+            "describe": "在【鳳儀宮正廳】審問林晚星與春桃，並等待皇上與其他嬪妃",
+            "start": 720,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "居高臨下地嘲諷林晚星，斥責其出身卑微且藐視宮廷等級秩序",
+                "start": 731,
+                "duration": 9
+              },
+              {
+                "idx": 1,
+                "describe": "命掌事宮女在眾人面前展示「證物」玉璽，冷眼欣賞林晚星百口莫辯的窘態",
+                "start": 740,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "訓誡陸續進入正廳的其他嬪妃，藉此機會展示其身為皇后的絕對權威",
+                "start": 750,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "再次核對栽贓的環節，確保待會皇上駕臨時所有「鐵證」都萬無一失",
+                "start": 760,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "整理鳳冠霞帔並調整神情，端坐主位靜候皇上聖駕駕臨",
+                "start": 770,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 13,
+            "describe": "接待皇上並主持午間請安，公開審理林晚星並為其定罪",
+            "start": 780,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "繼續嚴詞質問林晚星與春桃，以威壓封堵其辯解之詞",
+                "start": 817,
+                "duration": 8
+              },
+              {
+                "idx": 1,
+                "describe": "依據宮規綱紀向皇上陳述林晚星「盜取玉璽」的罪狀",
+                "start": 825,
+                "duration": 9
+              },
+              {
+                "idx": 2,
+                "describe": "觀察皇上神色並最終宣告林晚星與春桃的罪名成立",
+                "start": 834,
+                "duration": 6
+              }
+            ]
+          },
+          {
+            "idx": 14,
+            "describe": "在皇上面前落實罪證，維持宮法綱紀",
+            "start": 840,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "徹底平息因端妃挑釁引發的波瀾，重申後宮法度以震懾眾人，並督促內監將林晚星與春桃正式收押移交慎刑司，確保處置無誤",
+                "start": 891,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "恭送皇上駕返，下令即刻清理鳳儀宮現場，恢復宮闈肅靜，並針對今日端妃之舉動於心中盤算後續應對之策",
+                "start": 896,
+                "duration": 4
+              }
+            ]
+          },
+          {
+            "idx": 15,
+            "describe": "審理暫告一段落，在寢殿小憩並復盤局勢",
+            "start": 900,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "屏退眾人並由宮女扶持從正廳步入寢殿",
+                "start": 900,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "由近身侍女服侍卸下沉重的鳳冠與華麗外袍",
+                "start": 905,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "靠在軟榻上閉目回想皇上在審理時的反應與神色",
+                "start": 915,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "盤算如何利用玉璽案的後續進展徹底剷除林晚星",
+                "start": 925,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "進入深度小憩以恢復處理繁雜宮務所需的體力",
+                "start": 935,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "喚宮女進殿伺候梳洗並重新整理端莊的儀容",
+                "start": 950,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "命人將內務府的賬目搬至案頭準備核對",
+                "start": 955,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 16,
+            "describe": "核對內務府賬目，確保宮中等級用度分明",
+            "start": 960,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "傳喚內務府總管太監並令其呈上本月各宮開支賬目",
+                "start": 960,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "逐項核查各宮嬪妃的月例銀子與綢緞規格是否符合位分",
+                "start": 970,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "重點翻閱林晚星所在的靜安苑用度記錄以尋找逾矩把柄",
+                "start": 980,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "根據等級森嚴的制度重新分配內務府新進的貢品珠寶",
+                "start": 990,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "嚴厲訓誡內務府總管務必確保宮中尊卑秩序不容逾越",
+                "start": 1005,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "整理鳳袍與妝容準備前往正廳主持晚間請安",
+                "start": 1015,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 17,
+            "describe": "在【鳳儀宮正廳】接受嬪妃晚間請安，言語諷刺壓制林晚星以展示地位",
+            "start": 1020,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "由大宮女攙扶轉入內殿，重新梳理因方才訓誡而略顯散亂的鬢髮，並更換輕便而不失莊重的常服，焚起龍涎香靜候聖駕。",
+                "start": 1071,
+                "duration": 9
+              }
+            ]
+          },
+          {
+            "idx": 18,
+            "describe": "保持端莊儀態，在鳳儀宮內屏退左右靜候聖駕",
+            "start": 1080,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在貼身宮女的服侍下整理鳳冠與衣褶，確保儀態完美",
+                "start": 1090,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "屏退殿內所有伺候的宮女與太監，要求眾人退至殿外候命",
+                "start": 1100,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "獨自端坐於主位，端起茶盞細品，平復與林晚星對峙後的起伏思緒",
+                "start": 1105,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "閉目凝神，在腦中最後一次復盤玉璽案的證據鏈以防萬一",
+                "start": 1115,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "調整坐姿，手扶鳳頭扶手，維持皇后應有的威嚴與端莊",
+                "start": 1125,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "靜聽殿外更漏聲，在靜謐中等待19:00聖駕的到來",
+                "start": 1135,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 19,
+            "describe": "在【鳳儀宮】等待聖駕，若皇上到來則前往【宸暉殿】侍寢，否則在宮中安歇",
+            "start": 1140,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "整理鳳袍並端坐主位以維持皇后威儀",
+                "start": 1140,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "屏息聆聽殿外動靜並在心中復盤玉璽案細節",
+                "start": 1150,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "聽取大太監匯報皇上御駕的最新行蹤",
+                "start": 1160,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "再次審視妝容確保在皇上面前完美無瑕",
+                "start": 1165,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "迎接皇上駕臨鳳儀宮並行接駕大禮",
+                "start": 1170,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "陪同皇上短暫交談並領受移駕宸暉殿的旨意",
+                "start": 1180,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "步出鳳儀宮正廳登上前往宸暉殿的鳳輦",
+                "start": 1185,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "隨聖駕起駕前往宸暉殿準備伴駕侍寢",
+                "start": 1190,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 20,
+            "describe": "若皇上未至則在【鳳儀宮】安歇；若皇上到來則在【宸暉殿】與皇上共用晚膳",
+            "start": 1200,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在【宸暉殿】與皇上相對而坐並聽取御膳呈報",
+                "start": 1200,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "監督宮人進行試毒與布菜，彰顯皇家威儀與等級秩序",
+                "start": 1205,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "與皇上優雅共膳，維持端莊且尊貴的皇后儀態",
+                "start": 1215,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "借品膳之機，冷靜陳述林晚星「不守規矩」與「冒犯尊嚴」之舉",
+                "start": 1230,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "觀察皇上反應，並以「整肅宮闈」為由進言加重處罰",
+                "start": 1245,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "結束晚膳並由宮人撤下殘席，準備後續伴駕事宜",
+                "start": 1255,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 21,
+            "describe": "若皇上未至則在【鳳儀宮】就寢；若皇上到來則在【宸暉殿】伴駕侍寢",
+            "start": 1260,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "謝恩領旨，由宮女服侍更換輕便的隨行衣飾，整理儀容準備起駕",
+                "start": 1270,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "隨皇上御駕前往【宸暉殿】侍寢，沿途伴駕隨行，恭謹應對",
+                "start": 1285,
+                "duration": 20
+              },
+              {
+                "idx": 2,
+                "describe": "抵達【宸暉殿】，服侍皇上寬衣並在殿內安歇，不再返回原寢宮",
+                "start": 1305,
+                "duration": 15
+              }
+            ]
+          },
+          {
+            "idx": 22,
+            "describe": "睡覺",
+            "start": 1320,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "調整呼吸節奏進入沉睡狀態",
+                "start": 1320,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "在意識模糊間確認明日晨請安的安排",
+                "start": 1330,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "進入深層睡眠以保養容顏",
+                "start": 1335,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "於夢中維持身為皇后的冷峻威嚴",
+                "start": 1350,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "享受無人敢於驚擾的安穩睡眠",
+                "start": 1360,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "於睡夢中保持對周遭環境的敏銳感知",
+                "start": 1375,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 23,
+            "describe": "睡覺",
+            "start": 1380,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在沉睡中維持皇后的端莊儀態",
+                "start": 1380,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "進入深度睡眠並在夢中回味今日掌控局勢的快感",
+                "start": 1395,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "輕微翻身並下意識地整理身上蓋著的明黃錦被",
+                "start": 1405,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "在鳳儀宮安神香的環繞下持續深睡",
+                "start": 1410,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "徹底進入無夢的熟睡狀態以積蓄明日的精力",
+                "start": 1425,
+                "duration": 15
+              }
+            ]
+          },
+          {
+            "idx": 24,
+            "describe": "在【宸暉殿】與皇上同榻而眠，享受伴駕後的安穩與尊榮",
+            "start": 1440,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 25,
+            "describe": "睡覺",
+            "start": 1500,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 26,
+            "describe": "睡覺",
+            "start": 1560,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 27,
+            "describe": "睡覺",
+            "start": 1620,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 28,
+            "describe": "睡覺",
+            "start": 1680,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 29,
+            "describe": "睡覺",
+            "start": 1740,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 30,
+            "describe": "在【鳳儀宮】接受嬪妃晨間請安，並暗中安排心腹開始搜宮行動",
+            "start": 1800,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 31,
+            "describe": "屏退眾妃，在【鳳儀宮】內聽取心腹匯報搜宮部署，確保計畫萬無一失",
+            "start": 1860,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 32,
+            "describe": "保持端莊儀態享用早膳，思忖如何利用玉璽案徹底剷除林晚星",
+            "start": 1920,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 33,
+            "describe": "在【鳳儀宮】內處理日常宮務，維持皇后統御后宮的從容氣度",
+            "start": 1980,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 34,
+            "describe": "整理鳳袍儀容，帶著勝券在握的冷傲，準備前往靜安苑執行計畫",
+            "start": 2040,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 35,
+            "describe": "前往【靜安苑】「發現」遺失的玉璽，並下令將靜常在林晚星與宮女春桃扣押至【鳳儀宮】",
+            "start": 2100,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 36,
+            "describe": "在【鳳儀宮正廳】親自審問林晚星與春桃，封鎖現場並等待皇上及眾嬪妃駕臨",
+            "start": 2160,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 37,
+            "describe": "接待皇上並主持午間請安，公開審理玉璽案，以「鐵證」為林晚星定罪，維護皇室尊嚴",
+            "start": 2220,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 38,
+            "describe": "繼續在【鳳儀宮】主持審理，監督內務府記錄罪狀，不容許林晚星有任何辯駁機會",
+            "start": 2280,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 39,
+            "describe": "審理暫告一段落，回到寢殿小憩，並復盤局勢以確保萬無一失",
+            "start": 2340,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 40,
+            "describe": "核對內務府賬目，展現身為皇后統御后宮、處變不驚的從容",
+            "start": 2400,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 41,
+            "describe": "在【鳳儀宮】正廳接受嬪妃晚間請安，以言語諷刺並壓制靜常在，進一步確立絕對威權",
+            "start": 2460,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 42,
+            "describe": "晚間請安結束，在【鳳儀宮】內由宮人服侍更衣，準備迎接聖駕",
+            "start": 2520,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 43,
+            "describe": "準時在【鳳儀宮】內殿等待聖駕，若皇上駕臨則隨行前往【宸暉殿】伴駕侍寢",
+            "start": 2580,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 44,
+            "describe": "若皇上駕臨，則在【宸暉殿】與皇上共用晚膳；若未至，則在【鳳儀宮】獨自進膳",
+            "start": 2640,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 45,
+            "describe": "若皇上未至，則在【鳳儀宮】保持端莊儀態安歇就寢；若在【宸暉殿】，則伴駕安歇",
+            "start": 2700,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 46,
+            "describe": "睡覺",
+            "start": 2760,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 47,
+            "describe": "睡覺",
+            "start": 2820,
+            "duration": 60,
+            "decompose": {}
+          }
+        ]
+      },
+      "associate": {
+        "memory": {
+          "event": [
+            "node_285",
+            "node_284",
+            "node_283",
+            "node_282",
+            "node_281",
+            "node_279",
+            "node_278",
+            "node_277",
+            "node_276",
+            "node_275",
+            "node_274",
+            "node_273",
+            "node_272",
+            "node_271",
+            "node_270",
+            "node_269",
+            "node_268",
+            "node_267",
+            "node_266",
+            "node_265",
+            "node_264",
+            "node_263",
+            "node_262",
+            "node_244",
+            "node_243",
+            "node_242",
+            "node_241",
+            "node_240",
+            "node_239",
+            "node_238",
+            "node_237",
+            "node_236",
+            "node_235",
+            "node_234",
+            "node_233",
+            "node_232",
+            "node_231",
+            "node_229",
+            "node_228",
+            "node_227",
+            "node_226",
+            "node_225",
+            "node_224",
+            "node_223",
+            "node_222",
+            "node_221",
+            "node_220",
+            "node_219",
+            "node_218",
+            "node_217",
+            "node_216",
+            "node_215",
+            "node_214",
+            "node_213",
+            "node_212",
+            "node_211",
+            "node_210",
+            "node_209",
+            "node_208",
+            "node_207",
+            "node_206",
+            "node_205",
+            "node_204",
+            "node_186",
+            "node_185",
+            "node_184",
+            "node_183",
+            "node_182",
+            "node_181",
+            "node_180",
+            "node_179",
+            "node_177",
+            "node_176",
+            "node_175",
+            "node_174",
+            "node_173",
+            "node_172",
+            "node_171",
+            "node_170",
+            "node_169",
+            "node_168",
+            "node_167",
+            "node_166",
+            "node_165",
+            "node_164",
+            "node_163",
+            "node_161",
+            "node_143",
+            "node_142",
+            "node_141",
+            "node_139",
+            "node_138",
+            "node_137",
+            "node_136",
+            "node_135",
+            "node_134",
+            "node_133",
+            "node_132",
+            "node_131",
+            "node_130",
+            "node_129",
+            "node_128",
+            "node_127",
+            "node_125",
+            "node_124",
+            "node_123",
+            "node_121",
+            "node_103",
+            "node_102",
+            "node_101",
+            "node_100",
+            "node_99",
+            "node_98",
+            "node_97",
+            "node_96",
+            "node_95",
+            "node_94",
+            "node_93",
+            "node_92",
+            "node_91",
+            "node_90",
+            "node_89",
+            "node_88",
+            "node_87",
+            "node_86",
+            "node_85",
+            "node_84",
+            "node_83",
+            "node_81",
+            "node_63",
+            "node_62",
+            "node_61",
+            "node_60",
+            "node_59",
+            "node_58",
+            "node_56",
+            "node_55",
+            "node_54",
+            "node_53",
+            "node_52",
+            "node_51",
+            "node_50",
+            "node_49",
+            "node_48",
+            "node_47",
+            "node_46",
+            "node_45",
+            "node_44",
+            "node_43",
+            "node_42",
+            "node_24",
+            "node_23",
+            "node_22",
+            "node_21",
+            "node_20",
+            "node_19",
+            "node_18",
+            "node_17",
+            "node_16",
+            "node_15",
+            "node_14",
+            "node_13",
+            "node_12",
+            "node_11",
+            "node_10",
+            "node_9",
+            "node_8",
+            "node_7",
+            "node_6",
+            "node_5",
+            "node_3",
+            "node_2",
+            "node_1"
+          ],
+          "thought": [
+            "node_286",
+            "node_261",
+            "node_260",
+            "node_259",
+            "node_258",
+            "node_257",
+            "node_256",
+            "node_255",
+            "node_254",
+            "node_253",
+            "node_252",
+            "node_251",
+            "node_250",
+            "node_249",
+            "node_248",
+            "node_247",
+            "node_246",
+            "node_245",
+            "node_203",
+            "node_202",
+            "node_201",
+            "node_200",
+            "node_199",
+            "node_198",
+            "node_197",
+            "node_196",
+            "node_195",
+            "node_194",
+            "node_193",
+            "node_192",
+            "node_191",
+            "node_190",
+            "node_189",
+            "node_188",
+            "node_187",
+            "node_160",
+            "node_159",
+            "node_158",
+            "node_157",
+            "node_156",
+            "node_155",
+            "node_154",
+            "node_153",
+            "node_152",
+            "node_151",
+            "node_150",
+            "node_149",
+            "node_148",
+            "node_147",
+            "node_146",
+            "node_145",
+            "node_144",
+            "node_120",
+            "node_119",
+            "node_118",
+            "node_117",
+            "node_116",
+            "node_115",
+            "node_114",
+            "node_113",
+            "node_112",
+            "node_111",
+            "node_110",
+            "node_109",
+            "node_108",
+            "node_107",
+            "node_106",
+            "node_105",
+            "node_104",
+            "node_80",
+            "node_79",
+            "node_78",
+            "node_77",
+            "node_76",
+            "node_75",
+            "node_74",
+            "node_73",
+            "node_72",
+            "node_71",
+            "node_70",
+            "node_69",
+            "node_68",
+            "node_67",
+            "node_66",
+            "node_65",
+            "node_64",
+            "node_41",
+            "node_40",
+            "node_39",
+            "node_38",
+            "node_37",
+            "node_36",
+            "node_35",
+            "node_34",
+            "node_33",
+            "node_32",
+            "node_31",
+            "node_30",
+            "node_29",
+            "node_28",
+            "node_27",
+            "node_26",
+            "node_25",
+            "node_0"
+          ],
+          "chat": [
+            "node_280",
+            "node_230",
+            "node_178",
+            "node_162",
+            "node_140",
+            "node_126",
+            "node_122",
+            "node_82",
+            "node_57",
+            "node_4"
+          ]
+        }
+      },
+      "chats": [
+        [
+          "華嵐",
+          "皇上，今日為著那林氏與玉璽的紛擾，累得您勞神許久。如今夜色已深，臣妾已命人換上了您慣用的龍涎香，這便服侍皇上寬衣安寢吧。宮闈瑣事自有臣妾替您周全，皇上龍體為重，莫要再為那些不省心的奴才動氣了。"
+        ],
+        [
+          "蕭徹",
+          "皇后有心了。今日鳳儀宮那一齣鬧劇，朕看在眼裡，林氏的辯解固然有些意思，但朕更看重的是這宮裡的規矩。你身為中宮，理應知曉朕最厭惡便是欺瞞，剪秋的事，朕希望你心裡有個分寸，莫要讓朕失望。夜色已深，那些煩心事便先擱下吧。愛妃，今晚隨朕回【宸暉殿】侍寢。"
+        ]
+      ],
+      "currently": "華嵐帶著伴駕後的從容與勝券在握的冷傲，正端坐於鳳儀宮主位迎接嬪妃晨請，準備以不容挑戰的皇后威權，將林晚星最後的掙扎徹底埋葬在精心佈置的「鐵案」之中",
+      "action": {
+        "event": {
+          "subject": "華嵐",
+          "predicate": "正在",
+          "object": "睡觉",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "鳳儀宮",
+            "鳳儀宮休息區",
+            "床"
+          ],
+          "emoji": "😴"
+        },
+        "obj_event": {
+          "subject": "床",
+          "predicate": "被占用",
+          "object": "華嵐",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "鳳儀宮",
+            "鳳儀宮休息區",
+            "床"
+          ],
+          "emoji": "🛌"
+        },
+        "start": "20250214-02:00:00",
+        "duration": 60
+      },
+      "coord": [
+        38,
+        49
+      ]
+    },
+    "蕭徹": {
+      "config_path": "assets\\village\\agents\\蕭徹\\agent.json",
+      "status": {
+        "poignancy": 138
+      },
+      "schedule": {
+        "create": "20250214-00:00:00",
+        "daily_schedule": [
+          {
+            "idx": 0,
+            "describe": "睡觉",
+            "start": 0,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "屏退雜念並調整呼吸節奏",
+                "start": 0,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "進入初步淺眠狀態",
+                "start": 5,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "在夢境邊緣維持對周遭環境的潛意識警覺",
+                "start": 15,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "徹底放鬆肌肉進入深度睡眠",
+                "start": 25,
+                "duration": 20
+              },
+              {
+                "idx": 4,
+                "describe": "保持平穩呼吸持續熟睡以應對清晨早朝",
+                "start": 45,
+                "duration": 15
+              }
+            ]
+          },
+          {
+            "idx": 1,
+            "describe": "睡觉",
+            "start": 60,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "进入深度睡眠以缓解处理政务的疲劳",
+                "start": 60,
+                "duration": 20
+              },
+              {
+                "idx": 1,
+                "describe": "维持浅眠，凭借其敏锐洞察力保持对寝宫动静的警觉",
+                "start": 80,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "翻身并调整睡姿以保持舒适",
+                "start": 90,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "在潜意识中继续复盘玉玺案的权力博弈",
+                "start": 100,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "彻底放松身心进入稳固的睡眠状态",
+                "start": 115,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 2,
+            "describe": "睡觉",
+            "start": 120,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "维持深度睡眠以恢复处理政务的精力",
+                "start": 120,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "在潜意识中复盘玉玺案的权力涡旋",
+                "start": 130,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "调整睡姿并保持呼吸平稳",
+                "start": 135,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "进入沉稳的无梦睡眠阶段",
+                "start": 140,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "凭借武学本能保持对寝宫环境的细微警觉",
+                "start": 150,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "处于快速动眼期，潜意识整合苏、柳、华三家情报",
+                "start": 155,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "持续深度沉睡以修复身体机能",
+                "start": 165,
+                "duration": 10
+              },
+              {
+                "idx": 7,
+                "describe": "维持平稳的浅睡眠状态直至下一个周期",
+                "start": 175,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 3,
+            "describe": "睡觉",
+            "start": 180,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 4,
+            "describe": "起床洗漱，由宮人服侍更衣並進用早膳",
+            "start": 240,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 5,
+            "describe": "在乾元殿主持早朝，聽取文武百官奏報政務",
+            "start": 300,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 6,
+            "describe": "在乾元殿主持早朝，處理朝中各項軍政要務",
+            "start": 360,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 7,
+            "describe": "在乾元殿主持早朝，處理朝中各項軍政要務",
+            "start": 420,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 8,
+            "describe": "在乾元殿主持早朝，處理朝中各項軍政要務",
+            "start": 480,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 9,
+            "describe": "在乾元殿主持早朝，處理朝中各項軍政要務",
+            "start": 540,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 10,
+            "describe": "在乾元殿主持早朝，處理朝中各項軍政要務",
+            "start": 600,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 11,
+            "describe": "在乾元殿主持早朝，處理朝中各項軍政要務",
+            "start": 660,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 12,
+            "describe": "在乾元殿處理政務收尾，12:30起駕前往鳳儀宮",
+            "start": 720,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "批閱早朝後留下的幾份緊急奏摺",
+                "start": 720,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "叮囑隨行太監處理朝堂軍政要務的後續事宜",
+                "start": 730,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "靜坐片刻，思索玉璽案背後的朝堂勢力糾葛",
+                "start": 740,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "擺駕鳳儀宮，在儀仗簇擁下離開乾元殿",
+                "start": 750,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "在前往鳳儀宮的途中觀察宮中動向並平復心緒",
+                "start": 755,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "抵達鳳儀宮正門並步入正廳準備審問",
+                "start": 770,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 13,
+            "describe": "準時到達鳳儀宮正廳，親自審問林晚星，對其辯解進行判斷與觀察",
+            "start": 780,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "步入鳳儀宮正廳，在主位落座並環視眾人營造威壓",
+                "start": 780,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "沉默注視跪在地上的林晚星，通過其細微神態觀察其心理素質",
+                "start": 785,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "冷聲詰問林晚星關於私藏玉璽的重罪，觀察其第一反應",
+                "start": 795,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "傾聽林晚星的初步辯解，運用洞察力判斷其是否在撒謊",
+                "start": 800,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "針對其辯解中的邏輯漏洞進行步步緊逼的追問",
+                "start": 810,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "觀察林晚星在極端壓力下的言行，對其不同尋常的膽識產生一絲興趣",
+                "start": 820,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "示意眾人退後，準備進一步單獨審視林晚星的說辭",
+                "start": 830,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 14,
+            "describe": "在鳳儀宮繼續審問林晚星，運用洞察力判斷其言語真偽",
+            "start": 840,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "傳喚心腹侍衛，下旨秘密調查剪秋的行蹤與物證，並命人嚴加看管春桃以防被滅口",
+                "start": 891,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "拂袖起身整理衣冠，帶著對朝堂局勢與後宮博弈的新思量，按原計劃離開鳳儀宮前往御花園散心",
+                "start": 896,
+                "duration": 4
+              }
+            ]
+          },
+          {
+            "idx": 15,
+            "describe": "離開鳳儀宮，前往御花園散心，思考玉璽案背後的朝堂勢力平衡",
+            "start": 900,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "結束審問並向鳳儀宮侍衛下達嚴密監視林晚星的指令",
+                "start": 900,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "擺駕離開鳳儀宮，在隨從簇擁下步行前往御花園",
+                "start": 910,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "在御花園曲徑漫步，藉由自然景色平復審問後的煩躁",
+                "start": 920,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "於御花園涼亭內靜坐，反思林晚星辯解時的言語漏洞與真偽",
+                "start": 930,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "深度推演玉璽案背後，各方朝臣勢力與後宮聯動的利益博弈",
+                "start": 940,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "整理思緒並起身，在太監引領下準備前往養心殿",
+                "start": 955,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 16,
+            "describe": "前往養心殿批閱各部奏摺，處理國家大計",
+            "start": 960,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "從御花園起駕返回養心殿",
+                "start": 960,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "進入養心殿，由太監伺候淨手並準備筆墨",
+                "start": 970,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "審閱兵部關於邊境防務的加急奏摺",
+                "start": 975,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "批閱戶部關於賑災糧草發放的奏摺",
+                "start": 985,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "研讀吏部呈報的官員調任名單，思考朝堂勢力平衡",
+                "start": 995,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "聽取大太監匯報今日宮中各方的動向",
+                "start": 1010,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "在奏摺上落下硃批，並整理案頭文書",
+                "start": 1015,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 17,
+            "describe": "在養心殿批閱奏摺，運用帝王權術權衡前朝與後宮勢力",
+            "start": 1020,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "審閱兵部關於邊境調防的奏摺，分析將領間的派系關聯",
+                "start": 1020,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "批閱吏部官員考核名單，權衡朝中各大世家的勢力消長",
+                "start": 1030,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "思考玉璽案與林家、蘇家在朝堂勢力的潛在聯繫",
+                "start": 1040,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "針對戶部撥款爭議撰寫硃批，利用制衡之道平息派系鬥爭",
+                "start": 1050,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "聽取貼身太監彙報華嵐與柳如眉宮中的最新動向",
+                "start": 1060,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "綜合前朝與後宮情報，定下今日制衡各方的批示方針",
+                "start": 1070,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 18,
+            "describe": "在養心殿處理政務，決定翻牌子選定蘇凝香侍寢",
+            "start": 1080,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "閱覽密探呈報，分析玉璽案牽涉的朝臣與後宮勢力",
+                "start": 1080,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "權衡蘇、柳、華三家在朝中的權力制衡，思考封賞或打壓之策",
+                "start": 1095,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "批復關鍵政務奏摺，下達平衡各方勢力的聖旨",
+                "start": 1110,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "閉目沉思，回想今日林晚星在鳳儀宮的言行並判斷其真偽",
+                "start": 1120,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "翻開蘇凝香的綠頭牌，正式選定其為今晚侍寢人選",
+                "start": 1130,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "傳喚敬事房太監，交代起駕前往玉芙宮的相關事宜",
+                "start": 1135,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 19,
+            "describe": "前往玉芙宮接蘇凝香侍寢",
+            "start": 1140,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "整理養心殿案頭的奏折並封存重要公文",
+                "start": 1140,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "由隨侍太監服侍更換前往後宮的常服",
+                "start": 1145,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "走出養心殿，乘坐龍輦前往蘇凝香所在的玉芙宮",
+                "start": 1155,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "抵達玉芙宮，在宮門口審視宮人的禮儀與神態",
+                "start": 1170,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "進入玉芙宮正殿，接受蘇凝香的請安與接駕",
+                "start": 1175,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "與蘇凝香簡單交談，憑藉洞察力觀察其言語神色是否有異",
+                "start": 1185,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "吩咐起駕，帶領蘇凝香離開玉芙宮前往宸暉殿",
+                "start": 1195,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 20,
+            "describe": "帶領蘇凝香回到宸暉殿共同用晚膳，並同床安歇",
+            "start": 1200,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "攜蘇凝香從玉芙宮起駕，返回宸暉殿",
+                "start": 1200,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "抵達宸暉殿，由宮人伺候更換寬鬆常服",
+                "start": 1215,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "吩咐傳膳，與蘇凝香淨手準備用膳",
+                "start": 1220,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "與蘇凝香共同用晚膳，席間冷眼觀察其言行舉止",
+                "start": 1225,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "撤下晚膳，與蘇凝香品茗消食並聽其言談",
+                "start": 1240,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "由宮人伺候寬衣洗漱，準備入內殿安歇",
+                "start": 1250,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "屏退左右，與蘇凝香同往內殿床榻安歇",
+                "start": 1255,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 21,
+            "describe": "在宸暉殿與蘇凝香同床安歇",
+            "start": 1260,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "擺駕離開原寢宮，與皇后華嵐一同前往【宸暉殿】",
+                "start": 1270,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "於【宸暉殿】由皇后華嵐侍寢並安歇，感受其體貼心意，放鬆緊繃神經",
+                "start": 1280,
+                "duration": 40
+              }
+            ]
+          },
+          {
+            "idx": 22,
+            "describe": "在宸暉殿與蘇凝香同床安歇",
+            "start": 1320,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在榻上與蘇凝香低聲交談，試探其對林晚星及玉璽案的看法",
+                "start": 1320,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "運用敏銳洞察力，通過蘇凝香的神情判斷其言語是否有欺瞞",
+                "start": 1330,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "暫時放下戒心，享受蘇凝香的溫柔侍奉以緩解白日政務的疲勞",
+                "start": 1340,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "閉目養神，在腦中復盤今日在鳳儀宮觀察到的種種細節與疑點",
+                "start": 1355,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "思考如何利用玉璽案平衡前朝與後宮的勢力分佈",
+                "start": 1365,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "擁蘇凝香入眠，並憑藉武藝高強的本能保持對周遭的警覺",
+                "start": 1375,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 23,
+            "describe": "在宸暉殿與蘇凝香同床安歇",
+            "start": 1380,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "與蘇凝香低聲交談，試探其對玉璽案的知情程度",
+                "start": 1380,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "觀察蘇凝香言談間的細微表情，捕捉是否有隱瞞之色",
+                "start": 1390,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "示意蘇凝香熄滅內殿餘下的紅燭，準備入睡",
+                "start": 1395,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "閉目回想今日林晚星在鳳儀宮的辯解，分析其邏輯漏洞",
+                "start": 1400,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "思考前朝勢力與後宮妃嬪在此次案件中的利益關聯",
+                "start": 1410,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "憑藉敏銳聽覺感應寢宮外的守衛動靜，確認安防無虞",
+                "start": 1420,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "進入淺眠狀態，但仍保持武者的警覺以防突發狀況",
+                "start": 1425,
+                "duration": 15
+              }
+            ]
+          },
+          {
+            "idx": 24,
+            "describe": "在宸暉殿安歇",
+            "start": 1440,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 25,
+            "describe": "在宸暉殿安歇",
+            "start": 1500,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 26,
+            "describe": "在宸暉殿安歇",
+            "start": 1560,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 27,
+            "describe": "在宸暉殿安歇",
+            "start": 1620,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 28,
+            "describe": "起床並由內侍服侍洗漱更衣",
+            "start": 1680,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 29,
+            "describe": "在乾元殿上早朝，藉玉璽案精準操控蘇、柳、華三家勢力平衡",
+            "start": 1740,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 30,
+            "describe": "繼續在乾元殿上朝，冷眼俯瞰群臣並聽取各方奏報",
+            "start": 1800,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 31,
+            "describe": "繼續在乾元殿處理政務，與權臣博弈，維持朝堂平衡",
+            "start": 1860,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 32,
+            "describe": "結束早朝，在乾元殿偏殿聽取影衛關於玉璽案的密報",
+            "start": 1920,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 33,
+            "describe": "在乾元殿批閱早朝後留下的緊急公文",
+            "start": 1980,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 34,
+            "describe": "在乾元殿內室稍作休息，思考蘇凝香神情背後的深意",
+            "start": 2040,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 35,
+            "describe": "在乾元殿用午膳，並聽取內侍匯報後宮動向",
+            "start": 2100,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 36,
+            "describe": "從乾元殿出發，起駕前往鳳儀宮",
+            "start": 2160,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 37,
+            "describe": "準時到達鳳儀宮正廳，親自審問林晚星",
+            "start": 2220,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 38,
+            "describe": "在鳳儀宮對林晚星的辯解與邏輯證物進行深度洞察與分析",
+            "start": 2280,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 39,
+            "describe": "離開鳳儀宮，前往御花園散心，思考玉璽案背後的朝堂權力漩渦",
+            "start": 2340,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 40,
+            "describe": "前往養心殿批閱奏折，處理前朝政務",
+            "start": 2400,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 41,
+            "describe": "繼續在養心殿批閱奏折，平衡各方勢力訴求",
+            "start": 2460,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 42,
+            "describe": "處理完畢政務，翻牌子選定蘇凝香，並準備起駕",
+            "start": 2520,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 43,
+            "describe": "親自前往玉芙宮接蘇凝香",
+            "start": 2580,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 44,
+            "describe": "帶領蘇凝香回到宸暉殿共同用晚膳，並同床安歇",
+            "start": 2640,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 45,
+            "describe": "在宸暉殿安歇",
+            "start": 2700,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 46,
+            "describe": "在宸暉殿安歇",
+            "start": 2760,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 47,
+            "describe": "在宸暉殿安歇",
+            "start": 2820,
+            "duration": 60,
+            "decompose": {}
+          }
+        ]
+      },
+      "associate": {
+        "memory": {
+          "event": [
+            "node_99",
+            "node_98",
+            "node_97",
+            "node_96",
+            "node_95",
+            "node_94",
+            "node_93",
+            "node_92",
+            "node_91",
+            "node_90",
+            "node_89",
+            "node_88",
+            "node_87",
+            "node_86",
+            "node_85",
+            "node_84",
+            "node_83",
+            "node_82",
+            "node_81",
+            "node_80",
+            "node_79",
+            "node_78",
+            "node_77",
+            "node_76",
+            "node_75",
+            "node_73",
+            "node_72",
+            "node_71",
+            "node_70",
+            "node_69",
+            "node_68",
+            "node_67",
+            "node_66",
+            "node_65",
+            "node_64",
+            "node_63",
+            "node_62",
+            "node_61",
+            "node_60",
+            "node_59",
+            "node_58",
+            "node_57",
+            "node_56",
+            "node_55",
+            "node_54",
+            "node_53",
+            "node_52",
+            "node_34",
+            "node_33",
+            "node_32",
+            "node_31",
+            "node_30",
+            "node_29",
+            "node_28",
+            "node_27",
+            "node_26",
+            "node_25",
+            "node_24",
+            "node_23",
+            "node_22",
+            "node_21",
+            "node_19",
+            "node_18",
+            "node_17",
+            "node_16",
+            "node_15",
+            "node_14",
+            "node_13",
+            "node_12",
+            "node_11",
+            "node_10",
+            "node_9",
+            "node_8",
+            "node_7",
+            "node_6",
+            "node_5",
+            "node_4",
+            "node_3",
+            "node_2",
+            "node_1"
+          ],
+          "thought": [
+            "node_100",
+            "node_51",
+            "node_50",
+            "node_49",
+            "node_48",
+            "node_47",
+            "node_46",
+            "node_45",
+            "node_44",
+            "node_43",
+            "node_42",
+            "node_41",
+            "node_40",
+            "node_39",
+            "node_38",
+            "node_37",
+            "node_36",
+            "node_35",
+            "node_0"
+          ],
+          "chat": [
+            "node_74",
+            "node_20"
+          ]
+        }
+      },
+      "chats": [
+        [
+          "華嵐",
+          "皇上，今日為著那林氏與玉璽的紛擾，累得您勞神許久。如今夜色已深，臣妾已命人換上了您慣用的龍涎香，這便服侍皇上寬衣安寢吧。宮闈瑣事自有臣妾替您周全，皇上龍體為重，莫要再為那些不省心的奴才動氣了。"
+        ],
+        [
+          "蕭徹",
+          "皇后有心了。今日鳳儀宮那一齣鬧劇，朕看在眼裡，林氏的辯解固然有些意思，但朕更看重的是這宮裡的規矩。你身為中宮，理應知曉朕最厭惡便是欺瞞，剪秋的事，朕希望你心裡有個分寸，莫要讓朕失望。夜色已深，那些煩心事便先擱下吧。愛妃，今晚隨朕回【宸暉殿】侍寢。"
+        ]
+      ],
+      "currently": "蕭徹正於乾元殿早朝上冷眼俯瞰群臣，他將林晚星的邏輯證物與蘇凝香的閃爍神情化作棋子，在玉璽案的權力旋渦中精準操控著蘇、柳、華三家的勢力平衡",
+      "action": {
+        "event": {
+          "subject": "蕭徹",
+          "predicate": "正在",
+          "object": "睡觉",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "宸暉殿",
+            "宸暉殿休息區",
+            "床"
+          ],
+          "emoji": "😴"
+        },
+        "obj_event": {
+          "subject": "床",
+          "predicate": "被占用",
+          "object": "蕭徹",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "宸暉殿",
+            "宸暉殿休息區",
+            "床"
+          ],
+          "emoji": "🛌"
+        },
+        "start": "20250214-02:00:00",
+        "duration": 60
+      },
+      "coord": [
+        61,
+        66
+      ]
+    },
+    "蘇凝香": {
+      "config_path": "assets\\village\\agents\\蘇凝香\\agent.json",
+      "status": {
+        "poignancy": 101
+      },
+      "schedule": {
+        "create": "20250214-00:00:00",
+        "daily_schedule": [
+          {
+            "idx": 0,
+            "describe": "睡覺",
+            "start": 0,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "仔細檢查門窗插銷以確保寢殿安全",
+                "start": 0,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "熄滅內室燈火並褪去外衣躺入被褥",
+                "start": 5,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "藉由嗅聞枕邊自製的安神草藥放鬆神經",
+                "start": 10,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "閉目屏息聆聽窗外動靜，確認無人監視",
+                "start": 20,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "在腦中最後複盤明日扭轉局勢的說辭",
+                "start": 25,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "調整呼吸，強迫緊繃的身體進入淺眠",
+                "start": 35,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "徹底進入深層睡眠以積蓄明日所需的體力",
+                "start": 45,
+                "duration": 15
+              }
+            ]
+          },
+          {
+            "idx": 1,
+            "describe": "睡覺",
+            "start": 60,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "躺在榻上調整呼吸，平復因思慮過重而加速的心跳",
+                "start": 60,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "閉目凝神，在腦海中反覆推演明日應對審判的說辭",
+                "start": 65,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "保持警惕，通過細微聲響確認是否有宮人或外人靠近",
+                "start": 75,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "進入淺眠狀態，利用敏銳的感官維持對周遭環境的感知",
+                "start": 80,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "在睡夢中因內心的不安而下意識地蜷縮身體",
+                "start": 95,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "徹底放鬆病弱的軀體，進入深度睡眠以積蓄體力",
+                "start": 105,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "維持平穩的呼吸節奏，確保在清晨前獲得充分休息",
+                "start": 115,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 2,
+            "describe": "睡覺",
+            "start": 120,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "延續深層睡眠以修復虛弱體質",
+                "start": 120,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "在夢境中潛意識梳理昨晚窺見的真相",
+                "start": 135,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "因寒意輕微翻身並裹緊被褥",
+                "start": 145,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "進入沉睡階段為明日的博弈積蓄精力",
+                "start": 150,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "保持安靜睡姿以維持「小透明」的偽裝",
+                "start": 165,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "在淺眠中維持對周圍動靜的敏銳警覺",
+                "start": 175,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 3,
+            "describe": "睡覺",
+            "start": 180,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 4,
+            "describe": "睡覺",
+            "start": 240,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 5,
+            "describe": "睡覺",
+            "start": 300,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 6,
+            "describe": "前往鳳儀宮進行晨間請安",
+            "start": 360,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 7,
+            "describe": "請安結束返回【玉芙宮】，沿途低頭疾行避免引起他人注意",
+            "start": 420,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 8,
+            "describe": "在宮中修剪盆栽草藥，藉由勞作平復昨晚見到鬼祟身影的驚恐",
+            "start": 480,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 9,
+            "describe": "在【玉芙宮】閉門不出，暗自思索昨晚所見細節，內心反覆掙扎",
+            "start": 540,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 10,
+            "describe": "整理藥材，利用「小透明」生存術觀察宮人動向，感受宮中緊張氣氛",
+            "start": 600,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 11,
+            "describe": "在宮中簡單用膳，心中忐忑不安，為下午的聽審做心理準備",
+            "start": 660,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 12,
+            "describe": "懷著忐忑的心情從【玉芙宮】出發前往鳳儀宮",
+            "start": 720,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "整理仪容确保不显眼，深呼吸平复紧张情绪",
+                "start": 720,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "低头走出【玉芙宫】，避开主道选择偏僻小径行进",
+                "start": 725,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "边走边回想昨晚见到的鬼祟身影，内心反复挣扎是否该开口",
+                "start": 735,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "敏锐观察沿途宫人的神色，试图从中揣摩静常在案情的风向",
+                "start": 745,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "穿过长廊，在心中演练如何低调行事以防被皇后迁怒",
+                "start": 755,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "抵达【凤仪宫】外围，放慢脚步调整因紧张而急促的呼吸",
+                "start": 765,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "整理衣角，怀着忐忑的心情步入【凤仪宫】正厅",
+                "start": 775,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 13,
+            "describe": "到達【鳳儀宮正廳】聽審靜常在的案件，全程低頭不敢多言，暗自觀察眾人反應",
+            "start": 780,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "順著林晚星的話音，強壓下指尖的顫抖，挺直脊背步出列，向皇后與眾人詳細指出玉璽匣上那一抹殘留的蔻丹，與端妃侍女平日所用之色如出一轍",
+                "start": 826,
+                "duration": 7
+              },
+              {
+                "idx": 1,
+                "describe": "在眾人驚愕的目光中跪地陳情，字句清晰地敘述昨晚所見黑影的細節，將矛頭直指端妃，心中雖惶恐萬分，卻也因看見翻身契機而生出一股孤注一擲的勇氣",
+                "start": 833,
+                "duration": 7
+              }
+            ]
+          },
+          {
+            "idx": 14,
+            "describe": "繼續在鳳儀宮聽審，躲在角落捕捉旁人忽視的情緒變化與細節",
+            "start": 840,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "接獲宮人傳報玉璽於林晚星處搜出，心知此乃針對林氏的致命陷阱，迅速收斂心神，在趕往大殿途中於腦海中盤算宮中各方勢力在此案中的立場，力求尋得破局之法",
+                "start": 840,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "抵達殿內，見氣氛凝重如鉛，於皇上盛怒之下謹慎行禮，隨後退至一旁，一邊聽取內務府對搜查過程的陳述，一邊暗中觀察柳如眉與端妃的細微互動，尋找指控中的邏輯漏洞",
+                "start": 855,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "在紛雜的辯論聲中保持緘默，實則全神貫注地記錄內務府呈報的每一項細節，並在柳如眉試圖強行定罪時，適時以詢問細節為由打亂其節奏，為後續的反擊積蓄籌碼",
+                "start": 870,
+                "duration": 13
+              },
+              {
+                "idx": 3,
+                "describe": "面對柳如眉的強勢反撲與反咬，強壓下心頭悸動，在腦海中飛速復盤方才指證的細節，同時密切關注皇上對這份「物證」的裁決態度，並在紛亂的辯駁聲中重新評估端妃與柳如眉之間是否存在更深層的利益同盟，以補全玉璽案的邏輯鏈條",
+                "start": 883,
+                "duration": 12
+              },
+              {
+                "idx": 4,
+                "describe": "林晚星以裹玉玺的贡品云缎为证，指出栽赃逻辑漏洞。苏凝香助攻，证实该料子仅端妃与皇后持有。两人一唱一和，借物证来源反将一军，恳请皇上彻查内务府账目，洗清冤屈的同时令幕后真凶无处遁形。",
+                "start": 895,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 15,
+            "describe": "前往【御花園】照顧花草，藉由修剪草藥平復因昨晚所見鬼祟身影而掙扎的心情",
+            "start": 900,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "低頭縮身默默離開鳳儀宮，避免與其他嬪妃發生目光接觸",
+                "start": 900,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "沿著僻靜小徑匆匆走往御花園，途中不斷回想昨晚的鬼祟身影",
+                "start": 910,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "到達平日照料的藥草圃，蹲下身子檢查草藥的濕度與長勢",
+                "start": 920,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "動手修剪藥草枯葉，試圖在重複勞作中壓抑對皇后威嚴的恐懼",
+                "start": 930,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "藉由辨識草藥氣味來分散注意力，思考昨晚所見與靜常在案的關聯",
+                "start": 945,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "收拾工具並整理儀容，準備進入下一階段的觀察掩飾",
+                "start": 955,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 16,
+            "describe": "繼續在御花園僻靜處觀察草木，以此掩飾內心的不安與掙扎",
+            "start": 960,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "尋找御花園中人跡罕至的僻靜角落並蹲下",
+                "start": 960,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "仔細辨認身前的幾株藥草，試圖藉此轉移注意力",
+                "start": 965,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "輕撫葉片，腦海中反覆浮現昨晚看到的鬼祟身影",
+                "start": 975,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "警覺地環顧四周，利用「小透明」本能確認無人監視",
+                "start": 985,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "假裝專注於撥弄泥土，實則在內心掙扎是否要揭露真相",
+                "start": 990,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "觀察遠處巡邏侍衛的動向，以此判斷宮中緊張氣氛",
+                "start": 1000,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "採集幾片具有安神功效的草藥葉子揉碎聞香以平復心情",
+                "start": 1005,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "深呼吸平復心緒，整理略顯凌亂的衣角與髮飾",
+                "start": 1010,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "起身拍落裙擺上的塵土，準備前往鳳儀宮",
+                "start": 1015,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 17,
+            "describe": "前往【鳳儀宮】進行晚間請安，盡量躲在人群最後面以防被皇后遷怒",
+            "start": 1020,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "從御花園匆匆走向【鳳儀宮】，沿途刻意避開成群的宮人",
+                "start": 1020,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "在【鳳儀宮】門外深呼吸，整理因緊張而略顯凌亂的衣角",
+                "start": 1030,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "悄無聲息地進入正廳，利用「小透明」技巧迅速鑽到人群最後排",
+                "start": 1035,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "隨眾嬪妃向皇后行晚間請安大禮，動作標準且低調",
+                "start": 1045,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "保持低頭姿勢，屏息聆聽皇后對靜常在之事的冷言訓誡",
+                "start": 1050,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "憑藉敏銳觀察力，偷偷觀察皇后及周圍嬪妃的神色反應",
+                "start": 1065,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "在請安即將結束時維持卑微姿態，祈禱不要被皇后注意到",
+                "start": 1075,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 18,
+            "describe": "請安結束，迅速離開鳳儀宮，避開人群返回【玉芙宮】",
+            "start": 1080,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在鳳儀宮正廳低頭等待皇后宣佈散去",
+                "start": 1080,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "隨眾人向皇后行禮並低調退出正廳",
+                "start": 1090,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "避開人群，沿著鳳儀宮側廊匆匆行走",
+                "start": 1095,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "運用敏銳觀察力確認四周無人跟隨或注意自己",
+                "start": 1105,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "穿過御花園偏僻小徑往玉芙宮方向前行",
+                "start": 1110,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "回到玉芙宮門口並向近身宮人詢問聖駕消息",
+                "start": 1125,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "進入內室更換輕便衣裳並整理儀容等待聖駕",
+                "start": 1130,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 19,
+            "describe": "準時回到【玉芙宮】等待聖駕，若皇上到來則前往【宸暉殿】伴駕侍寢",
+            "start": 1140,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "回到【玉芙宮】內室，屏退多餘宮人以求心安",
+                "start": 1140,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "褪去沉重的請安服飾，換上輕便且適合接駕的常服",
+                "start": 1150,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "稍微整理妝容，確保儀表端莊而不張揚",
+                "start": 1160,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "親自調配一盞安神草藥茶，藉此平復今日在鳳儀宮受到的驚嚇",
+                "start": 1165,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "坐在窗邊暗處，發揮敏銳觀察力留意宮門外的燈火與動靜",
+                "start": 1175,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "內心反覆掙扎，思考是否要將昨晚看到的鬼祟身影告知皇上",
+                "start": 1185,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "整理床鋪與室內陳設，做最後的接駕準備或歇息打算",
+                "start": 1195,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 20,
+            "describe": "若皇上未駕臨，則在自己宮中早睡安歇",
+            "start": 1200,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "確認聖駕未至，輕聲吩咐宮人關閉【玉芙宮】大門",
+                "start": 1200,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "坐在妝台前，小心翼翼地摘除頭上的髮簪與耳飾",
+                "start": 1205,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "使用平日採集的草藥調配潔面水，洗去面上脂粉",
+                "start": 1215,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "褪去繁瑣的宮裝外袍，換上柔軟舒適的素色寢衣",
+                "start": 1220,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "準備熱水泡腳，並加入安神助眠的乾草藥",
+                "start": 1225,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "憑藉敏銳的觀察力，親自檢查寢殿門窗是否閂好",
+                "start": 1235,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "坐在床沿平復今日因靜常在之事而忐忑不安的心情",
+                "start": 1240,
+                "duration": 10
+              },
+              {
+                "idx": 7,
+                "describe": "熄滅屋內多餘的燭火，僅留一盞微弱的宮燈",
+                "start": 1250,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "整理好被褥，躺下準備進入夢鄉",
+                "start": 1255,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 21,
+            "describe": "睡覺",
+            "start": 1260,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在睡夢中因不安而輕微翻身，腦海中仍殘留著昨晚鬼祟身影的畫面",
+                "start": 1260,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "進入淺眠狀態，憑藉敏銳的觀察力在潛意識中捕捉宮外的細微聲響",
+                "start": 1270,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "夢見自己在御花園採藥，唯有與草藥相伴時內心才感到短暫平靜",
+                "start": 1280,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "徹底陷入深度睡眠，身體因白天的極度緊張而得到必要的放鬆",
+                "start": 1295,
+                "duration": 20
+              },
+              {
+                "idx": 4,
+                "describe": "在睡夢中下意識地縮成一團並抓緊被角，尋求心理上的安全感",
+                "start": 1315,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 22,
+            "describe": "睡覺",
+            "start": 1320,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在床上輾轉反側，腦海中不斷浮現靜常在出事後的恐懼畫面",
+                "start": 1320,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "驚覺窗外風聲，縮在被窩裡屏息凝神，觀察屋內是否有異樣",
+                "start": 1330,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "內心掙扎是否該將昨晚看到的鬼祟身影告知他人，感到極度不安",
+                "start": 1335,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "起身飲用桌上預先配製的安神草藥茶，試圖平復心悸",
+                "start": 1350,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "重新躺下並拉緊被子，運用「小透明」生存術試圖放空大腦",
+                "start": 1360,
+                "duration": 15
+              },
+              {
+                "idx": 5,
+                "describe": "終於在極度疲憊中進入淺眠，但雙手仍下意識抓緊被角",
+                "start": 1375,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 23,
+            "describe": "睡覺",
+            "start": 1380,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "在不安的夢境中反覆翻身",
+                "start": 1380,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "被窗外細微的風聲驚醒",
+                "start": 1390,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "屏息凝神觀察帳幔外的黑影",
+                "start": 1395,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "腦中反覆閃過昨晚見到的鬼祟身影",
+                "start": 1400,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "輕手輕腳起身檢查門窗是否閂好",
+                "start": 1410,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "嗅聞枕邊安神草藥包的氣味以緩解恐懼",
+                "start": 1415,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "重新躺回床上並蜷縮起身體",
+                "start": 1420,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "擔心靜常在的安危而暗自祈禱",
+                "start": 1425,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "努力放鬆緊繃的肌肉嘗試再次入睡",
+                "start": 1430,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "進入疲憊而淺淡的睡眠",
+                "start": 1435,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 24,
+            "describe": "睡覺",
+            "start": 1440,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 25,
+            "describe": "睡覺",
+            "start": 1500,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 26,
+            "describe": "睡覺",
+            "start": 1560,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 27,
+            "describe": "睡覺",
+            "start": 1620,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 28,
+            "describe": "睡覺",
+            "start": 1680,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 29,
+            "describe": "睡覺",
+            "start": 1740,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 30,
+            "describe": "晨間請安，維持卑微柔弱的偽裝並暗中觀察宮中動向",
+            "start": 1800,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 31,
+            "describe": "結束請安返回玉芙宮，沿途利用敏銳觀察力留意各宮動態",
+            "start": 1860,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 32,
+            "describe": "回到玉芙宮，將昨晚窺見的真相在腦中反覆推演成邏輯利刃",
+            "start": 1920,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 33,
+            "describe": "在宮中閉門不出，反覆推敲真相細節並完善應對策略",
+            "start": 1980,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 34,
+            "describe": "藉由整理草藥平復心情，維持「小透明」的低調狀態以避人耳目",
+            "start": 2040,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 35,
+            "describe": "在玉芙宮內簡單用膳，為下午的審判保存體力與精力",
+            "start": 2100,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 36,
+            "describe": "懷著忐忑的心情從【玉芙宮】出發",
+            "start": 2160,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 37,
+            "describe": "到達【鳳儀宮正廳】嬪妃席聽審判，全程低頭不語，敏銳捕捉旁人忽視的情緒細節",
+            "start": 2220,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 38,
+            "describe": "繼續在鳳儀宮聽審，在卑微的偽裝下冷靜分析局勢破綻",
+            "start": 2280,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 39,
+            "describe": "前往【御花園】照顧花草，藉由草藥香氣平復心境，準備孤注一擲",
+            "start": 2340,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 40,
+            "describe": "在御花園修剪花木，實則在腦中進行最後的邏輯演練",
+            "start": 2400,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 41,
+            "describe": "前往【鳳儀宮】晚間請安，盡量躲在人群最後面，避免在審判餘波中被皇后遷怒",
+            "start": 2460,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 42,
+            "describe": "結束請安，低頭避開人群，迅速穿過宮道返回玉芙宮",
+            "start": 2520,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 43,
+            "describe": "準時回到【玉芙宮】等待聖駕，若皇上親自到來，則隨駕前往【宸暉殿】伴駕侍寢",
+            "start": 2580,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 44,
+            "describe": "若皇上未至則在宮中安歇；若皇上到來則在【宸暉殿】與皇上共用晚膳並同床安歇",
+            "start": 2640,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 45,
+            "describe": "睡覺（或在宸暉殿伴駕安歇）",
+            "start": 2700,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 46,
+            "describe": "睡覺（或在宸暉殿伴駕安歇）",
+            "start": 2760,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 47,
+            "describe": "睡覺（或在宸暉殿伴駕安歇）",
+            "start": 2820,
+            "duration": 60,
+            "decompose": {}
+          }
+        ]
+      },
+      "associate": {
+        "memory": {
+          "event": [
+            "node_191",
+            "node_190",
+            "node_189",
+            "node_188",
+            "node_187",
+            "node_186",
+            "node_185",
+            "node_184",
+            "node_183",
+            "node_182",
+            "node_181",
+            "node_180",
+            "node_179",
+            "node_178",
+            "node_177",
+            "node_176",
+            "node_175",
+            "node_174",
+            "node_173",
+            "node_172",
+            "node_171",
+            "node_170",
+            "node_169",
+            "node_168",
+            "node_167",
+            "node_166",
+            "node_165",
+            "node_164",
+            "node_146",
+            "node_145",
+            "node_144",
+            "node_142",
+            "node_141",
+            "node_140",
+            "node_139",
+            "node_138",
+            "node_137",
+            "node_136",
+            "node_135",
+            "node_134",
+            "node_133",
+            "node_132",
+            "node_130",
+            "node_129",
+            "node_128",
+            "node_127",
+            "node_126",
+            "node_125",
+            "node_107",
+            "node_106",
+            "node_105",
+            "node_104",
+            "node_103",
+            "node_101",
+            "node_100",
+            "node_99",
+            "node_98",
+            "node_97",
+            "node_96",
+            "node_95",
+            "node_94",
+            "node_93",
+            "node_92",
+            "node_91",
+            "node_90",
+            "node_89",
+            "node_88",
+            "node_87",
+            "node_86",
+            "node_85",
+            "node_84",
+            "node_83",
+            "node_82",
+            "node_64",
+            "node_63",
+            "node_62",
+            "node_61",
+            "node_60",
+            "node_59",
+            "node_58",
+            "node_57",
+            "node_56",
+            "node_55",
+            "node_54",
+            "node_53",
+            "node_52",
+            "node_50",
+            "node_49",
+            "node_48",
+            "node_47",
+            "node_46",
+            "node_45",
+            "node_27",
+            "node_26",
+            "node_25",
+            "node_24",
+            "node_23",
+            "node_22",
+            "node_21",
+            "node_20",
+            "node_19",
+            "node_18",
+            "node_17",
+            "node_16",
+            "node_15",
+            "node_14",
+            "node_13",
+            "node_12",
+            "node_10",
+            "node_9",
+            "node_8",
+            "node_7",
+            "node_6",
+            "node_5",
+            "node_4",
+            "node_3",
+            "node_2",
+            "node_1"
+          ],
+          "thought": [
+            "node_192",
+            "node_163",
+            "node_162",
+            "node_161",
+            "node_160",
+            "node_159",
+            "node_158",
+            "node_157",
+            "node_156",
+            "node_155",
+            "node_154",
+            "node_153",
+            "node_152",
+            "node_151",
+            "node_150",
+            "node_149",
+            "node_148",
+            "node_147",
+            "node_124",
+            "node_123",
+            "node_122",
+            "node_121",
+            "node_120",
+            "node_119",
+            "node_118",
+            "node_117",
+            "node_116",
+            "node_115",
+            "node_114",
+            "node_113",
+            "node_112",
+            "node_111",
+            "node_110",
+            "node_109",
+            "node_108",
+            "node_81",
+            "node_80",
+            "node_79",
+            "node_78",
+            "node_77",
+            "node_76",
+            "node_75",
+            "node_74",
+            "node_73",
+            "node_72",
+            "node_71",
+            "node_70",
+            "node_69",
+            "node_68",
+            "node_67",
+            "node_66",
+            "node_65",
+            "node_44",
+            "node_43",
+            "node_42",
+            "node_41",
+            "node_40",
+            "node_39",
+            "node_38",
+            "node_37",
+            "node_36",
+            "node_35",
+            "node_34",
+            "node_33",
+            "node_32",
+            "node_31",
+            "node_30",
+            "node_29",
+            "node_28",
+            "node_0"
+          ],
+          "chat": [
+            "node_143",
+            "node_131",
+            "node_102",
+            "node_51",
+            "node_11"
+          ]
+        }
+      },
+      "chats": [],
+      "currently": "蘇凝香正披著卑微柔弱的偽裝步入權力中心，內心卻冷靜地將昨晚窺見的真相磨成邏輯利刃，準備在皇上的審視下孤注一擲，將必死之局扭轉為重獲聖寵的契機",
+      "action": {
+        "event": {
+          "subject": "蘇凝香",
+          "predicate": "正在",
+          "object": "睡觉",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "玉芙宫",
+            "玉芙宫休息區",
+            "床"
+          ],
+          "emoji": "😴"
+        },
+        "obj_event": {
+          "subject": "床",
+          "predicate": "被占用",
+          "object": "蘇凝香",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "玉芙宫",
+            "玉芙宫休息區",
+            "床"
+          ],
+          "emoji": "🛌"
+        },
+        "start": "20250214-02:00:00",
+        "duration": 60
+      },
+      "coord": [
+        77,
+        56
+      ]
+    }
+  },
+  "step": 173
+}

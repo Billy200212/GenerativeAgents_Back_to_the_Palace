@@ -14,7 +14,7 @@
                 "provider": "openai",
                 "model": "gemini-3-flash-preview",
                 "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
-                "api_key": ""
+                "api_key": "enter your API here"
             },
             "interval": 1000,
             "poignancy_max": 150
@@ -25,7 +25,7 @@
                 "provider": "openai",
                 "model": "gemini-embedding-001",
                 "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
-                "api_key": ""
+                "api_key": "enter your API here"
             },
             "retention": 8
         }

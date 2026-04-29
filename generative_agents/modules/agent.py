@@ -117,9 +117,30 @@ class Agent:
         events = self.move(status["coord"], status.get("path"))
         plan, _ = self.make_schedule()
 
+        # ======== 新增 1：晨間重置邏輯 ========
+        # 如果她現在的計劃不是睡覺（比如早上起床洗漱了），就把她的「睡覺」坐標重置回自己的老家。
+        # 防止她第二天晚上沒被翻牌子，卻還自己跑去皇上床上睡。
+        if not ("sleeping" in plan["describe"] or "睡" in plan["describe"]):
+            if "living_area" in self.spatial.address:
+                self.spatial.address["睡觉"] = self.spatial.address["living_area"] + ["床"]
+        # ======================================
+
         if (plan["describe"] == "sleeping" or "睡" in plan["describe"]) and self.is_awake():
             self.logger.info("{} is going to sleep...".format(self.name))
+
+             # 默認讀取自己老家的床
             address = self.spatial.find_address("睡觉", as_list=True)
+            
+           # ======== 新增 2：整晚鎖定侍寢空間 ========
+            if "宸晖殿" in plan["describe"] or "宸暉殿" in plan["describe"]:
+                self.logger.info(f"!!! {self.name} is going to sleep at Emperor's bed (宸暉殿) !!!")
+                address = ["the Ville", "宸暉殿", "宸暉殿休息區", "床"]
+                
+                # 【最關鍵的一步】：覆寫她大腦裡關於「睡覺」的坐標記憶！
+                # 這樣今晚後續即使子任務是「繼續熟睡」，系統去讀取 find_address("睡觉") 時，讀到的也是宸暉殿！
+                self.spatial.address["睡觉"] = address
+            # ============================================
+
             tiles = self.maze.get_address_tiles(address)
             coord = random.choice(list(tiles))
             events = self.move(coord)
